@@ -78,6 +78,9 @@ DOCTEST    = $(SCRATCH)/doctest
 EPUBOUT    = $(SCRATCH)/epub
 SAGENBOUT  = $(SCRATCH)/sagenb
 JUPYTEROUT = $(SCRATCH)/jupyter
+WEBWORK    = https://webwork.pcc.edu
+# WEBWORK    = http://127.0.0.1:8080
+# WEBWORK    = https://webwork.collegeofidaho.edu
 
 # Following regularly presumes  xml:id="odeproject" on
 # the <book> element, so xsltproc creates  odeproject.tex
@@ -114,7 +117,7 @@ html:
 	cp -a $(SRC)/images $(HTMLOUT)
 	cp $(XSL)/odeproject-common.xsl $(XSL)/odeproject-html.xsl $(MBUSR)
 	cd $(HTMLOUT); \
-	xsltproc --xinclude $(MBUSR)/odeproject-html.xsl $(SRC)/odeproject.xml
+	xsltproc --xinclude --stringparam webwork.server $(WEBWORK) $(MBUSR)/odeproject-html.xsl $(SRC)/odeproject.xml
 
 viewhtml:
 	$(HTMLVIEWER) $(HTMLOUT)/odeproject.html &
