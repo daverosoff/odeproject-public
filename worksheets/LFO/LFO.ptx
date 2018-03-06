@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <cross-references text="type-local"/>
+  </docinfo>
+  <article xml:id="LFO">
+    <title>Differential Equations Worksheet</title>
+    <subtitle>Accompanies Section 1.5 in ODEP</subtitle>
+    <frontmatter>
+      <xi:include href="../header.ptx"/>
+    </frontmatter>
+    <section>
+      <title>First-order linear differential equations</title>
+      <p>In this workshop, you will see how to solve (remember the technical meaning of this word) linear first-order differential equations, that is, equations of the form<me>
+          \frac{dy}{dt} + p(t)y = g(t)
+      </me>.</p>
+      <activity xml:id="activity-integrating-factors-1">
+        <title>Integrating factors</title>
+        <prelude>
+          <p>Every student of the mathematical sciences should know how to solve first-order linear equations, along with the separable equations we encountered previously. First-order linear equations can always be solved (in principle<fn>The integrals that arise may be intractable for hand calculation.</fn>) via the method of integrating factors.</p>
+          <p>Consider the equation<men xml:id="eq-linear-1">\frac{dy}{dt} + \frac{y(t)}{2} = \frac{1}{2} e^{t/3}</men>.</p>
+        </prelude>
+        <task xml:id="task-mult-by-mu">
+          <statement><p>Multiply this equation by a new unknown function <m>\mu(t)</m>.</p></statement>
+          <answer xml:id="answer-mult-by-mu">
+            <p><me>\mu(t) \frac{dy}{dt} + \mu(t) \frac{y(t)}{2} = \frac{1}{2} \mu(t) e^{t/3}</me>.</p>
+          </answer>
+        </task>
+        <task xml:id="task-apply-product-rule">
+          <statement><p>According to the product rule, what is <m>(\mu(t)y(t))'</m>?<me>\frac{d}{dt}\left(\mu(t) y\right) = <fillin characters="40"/></me></p></statement>
+          <answer xml:id="answer-apply-product-rule">
+            <p><me>\frac{d}{dt}(\mu(t) y(t)) = \frac{d\mu}{dt} y(t) + \mu(t) \frac{dy}{dt}</me>.</p>
+          </answer>
+        </task>
+        <task xml:id="task-new-equation">
+          <statement><p>Observe that the expression <m>\mu(t) dy/dt</m> appears in both of the equations you found in <xref ref="task-mult-by-mu" /> and <xref ref="task-apply-product-rule" />.</p></statement>
+          <answer>
+            <p>Indeed, it does. See <xref ref="answer-mult-by-mu" text="phrase-hybrid"/> and <xref ref="answer-apply-product-rule" text="phrase-hybrid"/>.</p>
+          </answer>
+        </task>
+        <task xml:id="task-equate-two-sides">
+          <statement><p>Write down an equation that asserts the equality of the equation sides containing <m>\mu(t) dy/dt</m>.</p></statement>
+          <answer>
+            <p><me>\mu(t) \frac{dy}{dt} + \mu(t) \frac{y(t)}{2} = \frac{d\mu}{dt} y(t) + \mu(t) \frac{dy}{dt} </me>.</p>
+          </answer>
+        </task>
+        <task xml:id="task-find-mu">
+          <statement><p>Simplify the equation you found in <xref ref="task-equate-two-sides" />, isolate <m>d\mu/dt</m>, and integrate to find an expression for <m>\mu(t)</m>. (Choose the simplest value for the constant of integration.)</p></statement>
+          <answer>
+            <p><me>\mu(t) = e^{t/2}</me>.</p>
+          </answer>
+        </task>
+        <task xml:id="task-substitute-mu">
+          <statement><p>Now that your <term>integrating factor</term> <m>\mu(t)</m> is in hand, substitute it into the equation you found in <xref ref="task-new-equation" />.</p></statement>
+          <answer>
+            <p><md>
+              <mrow>e^{t/2} \frac{dy}{dt} + e^{t/2} \frac{y(t)}{2} \amp = \frac{1}{2} e^{t/2} e^{t/3}</mrow>
+              <mrow>\amp = \frac{1}{2} e^{5/6}</mrow>
+            </md>.</p>
+          </answer>
+        </task>
+        <task xml:id="task-recognize-derivative">
+          <statement><p>Apply the result of <xref ref="task-apply-product-rule" /> to the equation you found in <xref ref="task-substitute-mu" />.</p></statement>
+          <answer>
+            <p><me>\frac{d}{dt} \left( e^{t/2} y(t) \right) = \frac{1}{2} e^{5t/6}</me></p>
+          </answer>
+        </task>
+        <task xml:id="task-use-ftc">
+          <statement><p>Integrate, using the Fundamental Theorem of Calculus on both sides.</p></statement>
+          <answer>
+            <p><md>
+              <mrow>e^{t/2} y(t) \amp = \frac{1}{2} \frac{6}{5} e^{5t/6} + C</mrow>
+              <mrow>\amp = \frac{3}{5} e^{5t/6} + C</mrow>
+            </md></p>
+          </answer>
+        </task>
+        <task xml:id="task-finish-solve">
+          <statement>
+            <p>Solve the equation you found in <xref ref="task-use-ftc" /> for <m>y(t)</m>.</p>
+          </statement>
+          <answer>
+            <p><me>y(t) = \frac{3}{5} e^{t/3} + Ce^{-t/2}</me>.</p>
+          </answer>
+        </task>
+        <task xml:id="task-check">
+          <statement>
+            <p>Check that <m>y(t)</m> as found in <xref ref="task-finish-solve" /> is really a solution to the original <xref ref="eq-linear-1" />.</p>
+          </statement>
+          <solution>
+            <p>Since <m>y = \frac{3}{5} e^{t/3} + Ce^{-t/2}</m>, we can differentiate to find<me>
+              y' = \frac{1}{5} e^{t/3} - \frac{1}{2} Ce^{-t/2}
+            </me>. Substitution into <xref ref="eq-linear-1" /> then gives<md>
+              <mrow>\frac{dy}{dt} + \frac{y(t)}{2} \amp = \frac{1}{5} e^{t/3} - \frac{1}{2} Ce^{-t/2} + \frac{3}{10} e^{t/3} + \frac{1}{2} Ce^{-t/2}</mrow>
+              <mrow>\amp = \frac{1}{2} e^{t/3}</mrow>
+            </md>, as required.</p>
+          </solution>
+        </task>
+      </activity>
+      <activity xml:id="activity-practice-integrating-factors">
+          <title>Practice integrating factors</title>
+          <prelude>
+            <p>Consider the equation<men xml:id="eq-linear-2">
+              y' - 2ty = 2t
+            </men>.</p>
+          </prelude>
+          <task xml:id="task-practice-mult-by-mu">
+            <statement>
+              <p>Multiply both sides by <m>\mu(t)</m>.</p>
+            </statement>
+          </task>
+          <task xml:id="task-practice-apply-product-rule">
+            <statement>
+              <p>Recall what the product rule tells you about <m>(\mu(t) y(t))'</m>.</p>
+            </statement>
+          </task>
+          <task xml:id="task-practice-equate-two-sides">
+            <statement>
+              <p>Write an equation asserting the equality of two different expressions involving <m>\mu(t) dy/dt</m>.</p>
+            </statement>
+          </task>
+          <task xml:id="task-practice-find-mu">
+            <statement>
+              <p>Solve your equation for the integrating factor <m>\mu(t)</m>.</p>
+            </statement>
+            <hint><p>Remember, at this stage we can choose any convenient constant of integration: all the possible functions <m>\mu(t)</m> are equally good.</p></hint>
+          </task>
+          <task xml:id="task-practice-finish-solve">
+            <statement>
+              <p>Use <m>\mu(t)</m> and one more integration to solve <xref ref="eq-linear-2" />.</p>
+            </statement>
+            <hint><p>Here, the constant of integration is essential. We want to know all of the (infinitely many) functions that satisfy <xref ref="eq-linear-2" />, not just one of them.</p></hint>
+          </task>
+          <task xml:id="task-practice-check">
+            <statement>
+              <p>Differentiate the function you found in <xref ref="task-practice-finish-solve" /> and substitute into <xref ref="eq-linear-2" /> to verify that your solution is correct.</p>
+            </statement>
+          </task>
+      </activity>
+      <p>The foregoing activities should illustrate the general principle. In ODEP Section 1.5.2 we see that, to solve the equation<men xml:id="eq-linear-general">
+        y' + p(t)y = q(t)
+      </men>, we can always choose <m>\mu(t) = <fillin characters="40" /></m>, where <m>P(t)</m> is any antiderivative of <m>p(t)</m>.</p>
+      <warning>
+        <p>Note that the formula for the integrating factor assumes that the differential equation has been put into a certain <term>standard form</term>. If you memorize the former, be sure to remember the latter as well!</p>
+      </warning>
+    </section>
+  </article>
+</mathbook>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <cross-references text="type-local"/>
+  </docinfo>
+  <article xml:id="SFO">
+    <title>Differential Equations Worksheet</title>
+    <subtitle>Accompanies Section 1.2 in ODEP</subtitle>
+    <frontmatter>
+      <xi:include href="../header.ptx"/>
+    </frontmatter>
+    <section>
+      <title>First-order separable differential equations</title>
+      <p>In this workshop, you will see how to solve (remember the technical meaning of this word) separable first-order differential equations, that is, equations of the form<me>
+        M(x) + N(y) \frac{dy}{dx} = 0
+      </me>.</p>
+      <activity xml:id="activity-separable-ics-example">
+        <prelude><p>Solve the initial value problem <men xml:id="eq-sep-1">
+          \dfrac{dy}{dx} = 2xy^2, \quad y(2) = 1.
+        </men></p></prelude>
+        <task xml:id="task-standard-form"><p>Divide both sides by <m>y^2</m> to put the equation in standard form.</p></task>
+
+        <task xml:id="task-integrate-both-sides"><p>Integrate each side with respect to the evident variable. (This is
+        justified by appeal to <m>u</m>-substitution: <m>dy = y' \; dx</m>.)</p></task>
+
+        <task xml:id="task-apply-ics"><p>You should now have an equation that is free of derivatives, but with
+        a constant of integration. Plug in the initial values to find the value
+        of this constant.</p></task>
+
+        <task xml:id="task-finish"><p>If possible, solve your equation for <m>y</m>.</p></task>
+
+        <task xml:id="task-check">
+          <p>Substitute your function and its derivative into <xref ref="eq-sep-1" /> to make sure your solution is correct.</p>
+        </task>
+      </activity>
+
+      <activity xml:id="activity-separable-ics-2">
+        <task><p>Solve the initial value problem<men>
+          1 + ye^{-x} y' = 0, \quad y(0) = 1.
+        </men></p></task>
+      </activity>
+
+      <activity xml:id="activity-separable-no-ics">
+        <task><p>Find solutions to the differential equation<men>
+          y' = \frac{3x^2 + 4x + 2}{2(y-1)}.
+        </men></p></task>
+      </activity>
+
+      <activity xml:id="activity-more-equations">
+        <prelude><p>Solve the differential equations.</p></prelude>
+        <task xml:id="task-eq-1"><p><m>y' = \frac{x^2}{y}</m></p></task>
+
+        <task xml:id="task-eq-2"><p><m>y' + y^2 \sin{x} = 0</m></p></task>
+
+        <task xml:id="task-eq-3"><p><m>y' = \frac{x^2}{y + yx^3}</m></p></task>
+      </activity>
+
+      <activity xml:id="activity-final">
+        <prelude><p>Consider the initial value problem<men>
+          y' = 5y^2, y(0) = y_0.
+        </men></p></prelude>
+        <task xml:id="task-critical-values"><p>For what values of <m>y_0</m> does the solution have a vertical asymptote at <m>t = 6</m>
+        and a <m>t</m>-interval of existence <m>-\infty \lt t \lt 6</m>?</p></task>
+      </activity>
+    </section>
+  </article>
+</mathbook>
