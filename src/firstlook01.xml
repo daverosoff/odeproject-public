@@ -61,8 +61,8 @@
       <statement>
         <p>A differential equation along with an initial condition
           <md>
-            <mrow>P'(t) &amp; = k P(t),</mrow>
-            <mrow>P(0) &amp; = P_0</mrow>
+            <mrow>P'(t) \amp = k P(t),</mrow>
+            <mrow>P(0) \amp = P_0</mrow>
           </md>
           is an <term>initial value problem</term><idx>initial value problem</idx>.</p>
       </statement>
@@ -98,9 +98,7 @@
       <caption>Integral curves</caption>
     </figure>
 
-    <p>If you are reading the book online, you can click and drag in the
-      interactive below to see how changing the initial condition picks out
-      a different integral curve of the differential equation.</p>
+    <p>If you are reading the book online, you can use the sliders in the interactive widget below to see how changing the initial condition picks out a different integral curve of the differential equation.</p>
 
     <figure>
         <jsxgraph xml:id="jsxgraph-integral-curves" width="75%" aspect="4:3">
@@ -154,9 +152,11 @@
   <subsection xml:id="subsection-firstlook01-logistic-growth">
     <title>Logistic Growth</title>
 
-    <p>Not all populations grow exponentially; otherwise, a bacteria culture in a petri dish would grow unbounded and soon be much larger than the size of the laboratory. To see what happens if there are limiting factors to population growth, let us consider the population of fish in a children's trout pond. The number of trout will be limited by the available resources such as food supply as well as by spawning habitat. A small population of fish might grow exponentially if the pond is large and food is abundant, but the growth rate will decline as the population increases and the availability of resources declines.  We can use the <term>logistic equation</term><idx>logistic equation</idx> to model population growth in a resource limited environment.<fn>The logistic model was first used by the Belgian mathematician and physician Pierre François Verhulst in 1836 to predict the populations of Belgium and France.</fn></p>
+    <p>Not all populations grow exponentially; otherwise, a bacteria culture in a petri dish would grow unbounded and soon be much larger than the size of the laboratory. To see what happens if there are limiting factors to population growth, let us consider the population of fish in a children's trout pond. The number of trout will be limited by the available resources such as food supply as well as by spawning habitat. A small population of fish might grow exponentially if the pond is large and food is abundant, but this exponential behavior cannot last forever.  The growth rate will decline as the population increases and the availability of resources declines.  Another model, one that reflects this eventual slowdown, is needed.</p>
 
-    <p>To see how the logistic model works, let us try to adjust our model of exponential growth to account for the limited resources of the pond. We will make the following assumptions.
+    <p>We can use the <term>logistic equation</term><idx>logistic equation</idx> to model population growth in a resource limited environment.<fn>The logistic model was first used by the Belgian mathematician and physician Pierre François Verhulst in 1836 to predict the populations of Belgium and France.</fn></p>
+
+    <p>To see how the logistic model arises, let us try to adjust our model of exponential growth to account for the limited resources of the pond. We will make the following assumptions.
       <ul>
 
         <li>If the population of trout is small and the pond is large with abundant resources, the rate of growth will be approximately exponential,
@@ -168,31 +168,34 @@
 
       </ul>Our assumptions suggest that we might try an equation of the form
         <me>\frac{dP}{dt} = k f(P) P,</me>
-      where <m>f(P)</m> is a function of <m>P</m> that is close to 1 if the population is small, but negative if the population is greater than <m>N</m>. The simplest function satisfying these conditions is
+      where <m>f(P)</m> is a function of <m>P</m> that is close to 1 if the population is small (so that <m>dP/dt \approx kP</m> when <m>P</m> is small), but negative if the population is greater than <m>N</m> (so that <m>dP/dt \lt 0</m> when <m>P \gt N</m>). The simplest function satisfying these conditions is
         <me>f(P) = \left( 1 - \frac{P}{N} \right).</me>
       Thus, the <term>logistic population model</term> is given by the differential equation
         <me>\frac{dP}{dt} = k \left( 1 - \frac{P}{N} \right) P.</me></p>
+      <p>Note also that, according to the logistic model, if the population is equal to the carrying capacity, then
+        <me>\frac{dP}{dt} = k \left( 1 - \frac{N}{N} \right) P = 0.</me>
+      Thus, unless something happens that is not according to the model, the population will remain at this value indefinitely.  This is called an <term>equilibrium</term> point of the system and the constant function <m>P(t) = N</m> is called an <term>equilibrium solution</term> of the differential equation. Equilibrium solutions are of great importance, as we will see throughout the book.</p>
 
     <example xml:id="example-firstlook01-logistic-growth">
       <p>Suppose we have a pond that will support 1000 fish, and the initial population is 100 fish. In order to determine the number of fish in the lake at any time <m>t</m>, we must find a solution to the initial value problem
         <md>
-          <mrow>\frac{dP}{dt} &amp; = k \left( 1 - \frac{P}{1000} \right) P</mrow>
-          <mrow>P(0) &amp; = 100.</mrow>
+          <mrow>\frac{dP}{dt} \amp = k \left( 1 - \frac{P}{1000} \right) P</mrow>
+          <mrow>P(0) \amp = 100.</mrow>
         </md>
-      It is easy to verify that <m>P(t) = 1000/(9e^{-kt} + 1)</m> is the solution to our initial value problem.<fn>We will learn how to solve initial-value problems such as the one described here in <xref ref="firstlook02"/>. For the time being, we will be satisfied with being able to verify the fact that we have a solution.</fn> Certainly <m>P(0) = 100</m>, and if we differentiate <m>P</m>, we will obtain the righthand side of the differential equation,
+      It is easy to verify that <m>P(t) = 1000/(9e^{-kt} + 1)</m> is a solution to our initial value problem (<em>do it!</em>).<fn>We will learn how to solve initial-value problems such as the one described here in <xref ref="firstlook02"/>. For the time being, we will be satisfied with being able to verify that we have a solution.</fn> Certainly <m>P(0) = 100</m>, and if we differentiate <m>P</m>, we will obtain the righthand side of the differential equation,
         <md>
-          <mrow>\frac{dP}{dt} &amp; = \frac{d}{dt} \left(\frac{1000}{9e^{-kt} + 1}\right)</mrow>
-          <mrow>&amp; = 1000 k \frac{9e^{-kt}}{(9e^{-kt} + 1)^2}</mrow>
-          <mrow>&amp; = k \frac{9e^{-kt}}{(9e^{-kt} + 1)} \cdot \frac{1000}{9e^{-kt} + 1}</mrow>
-          <mrow>&amp; = k \frac{(9e^{-kt} + 1) - 1}{(9e^{-kt} + 1)} \cdot \frac{1000}{9e^{-kt} + 1}</mrow>
-          <mrow>&amp; = k \left( 1 - \frac{1000}{1000(9e^{-kt} + 1)}\right) \frac{1000}{9e^{-kt} + 1}</mrow>
-          <mrow>&amp; = k \left( 1 - \frac{P}{1000} \right) P.</mrow>
+          <mrow>\frac{dP}{dt} \amp = \frac{d}{dt} \left(\frac{1000}{9e^{-kt} + 1}\right)</mrow>
+          <mrow>\amp = 1000 k \frac{9e^{-kt}}{(9e^{-kt} + 1)^2}</mrow>
+          <mrow>\amp = k \frac{9e^{-kt}}{(9e^{-kt} + 1)} \cdot \frac{1000}{9e^{-kt} + 1}</mrow>
+          <mrow>\amp = k \frac{(9e^{-kt} + 1) - 1}{(9e^{-kt} + 1)} \cdot \frac{1000}{9e^{-kt} + 1}</mrow>
+          <mrow>\amp = k \left( 1 - \frac{1000}{1000(9e^{-kt} + 1)}\right) \frac{1000}{9e^{-kt} + 1}</mrow>
+          <mrow>\amp = k \left( 1 - \frac{P}{1000} \right) P.</mrow>
         </md>
       In addition, if we know that the population is 200 fish after one year, then
         <me>200 = P(1) = \frac{1000}{9e^{-k} + 1},</me>
       and we can determine that
         <me>k = \ln\left(  \frac{9}{4}\right) \approx 0.8109.</me>
-      Consequently, the solution to our intial-value problem is
+      (You are expected to perform the calculation yourself in full at this point.)  Consequently, the solution to our initial-value problem is
         <me>P(t) = \frac{1000}{9e^{-0.8109 t} + 1}.</me>
       The graph of our solution certainly fits the situation that we are modeling (<xref ref="figure-firstlook01-logistic-growth"/>).</p>
     </example>
@@ -211,12 +214,17 @@
 
     </figure>
 
+    <p>The next exercise will test your understanding of the discussion above and continue exploring a variation of the logistic population model. If you are reading the book online, you may need to enable Flash to see the applet within the exercise.</p>
+
+    <exercise>
+      <webwork source="Library/CSUOhio/differential_equations/logistic/logistic.pg"/>
+    </exercise>
   </subsection>
 
   <subsection xml:id="subsection-firstlook01-spring-mass">
     <title>A Spring-Mass Model</title>
 
-    <p>Sometimes it is necessary to consider the second derivative when modeling a phenomenon. Suppose that we have a mass lying on a flat, frictionless surface and that this mass is attached to one end of a spring with the other end of the spring attached to a wall. We will denote displacement of the spring by <m>x</m>. If <m>x \gt 0</m>, then the spring is stretched. If <m>x \lt 0</m>, the spring is compressed. If <m>x = 0</m>, then the spring is in a state of equilibrium (<xref ref="figure-firstlook01-spring-mass"/>). If we pull or push on the mass and release it, then the mass will oscillate back and forth across the table.</p>
+    <p>Sometimes it is necessary to consider the second derivative when modeling a phenomenon. Suppose that we have a mass lying on a flat, frictionless surface and that this mass is attached to one end of a spring with the other end of the spring attached to a wall. We will denote displacement of the spring by <m>x</m>. If <m>x \gt 0</m>, then the spring is stretched. If <m>x \lt 0</m>, the spring is compressed. If <m>x = 0</m>, then the spring is in a state of equilibrium (<xref ref="figure-firstlook01-spring-mass"/>). If we pull or push on the mass and release it, then the mass will oscillate back and forth across the surface.</p>
 
     <figure xml:id="figure-firstlook01-spring-mass">
       <image width="60%" xml:id="firstlook01-spring-mass">
@@ -229,16 +237,16 @@
 
     <p>We can construct a differential equation that models our oscillating mass. First, we must consider the restorative force on the spring. We will make the assumption that this force depends on the displacement of the spring, <m>F(x)</m>. Using Taylor's Theorem from calculus, we can expand <m>F</m> to obtain
       <md>
-        <mrow>F(x) &amp; =  F(0) + F'(0) x + \frac{1}{2} F''(0) x^2 + \cdots</mrow>
-        <mrow>&amp; = -k x + \frac{1}{2} F''(0) x^2 + \cdots,</mrow>
+        <mrow>F(x) \amp =  F(0) + F'(0) x + \frac{1}{2} F''(0) x^2 + \cdots</mrow>
+        <mrow>\amp = -k x + \frac{1}{2} F''(0) x^2 + \cdots,</mrow>
       </md>
-    where <m>F'(0) = -k</m> and <m>F(0) = 0</m>.  If the displacement is not too large, then <m>x^n</m> will be small for <m>n \geq 2</m>, and we can ignore higher ordered terms. Thus, we can consider the restorative force on the spring to be proportional to displacement of the spring from its equilibrium length,
+    where <m>F'(0) = -k</m> and <m>F(0) = 0</m>.  If the displacement is not too large, then <m>x^n</m> will be small for <m>n \geq 2</m>, and we can ignore higher-order terms. Thus, we can consider the restorative force on the spring to be proportional to displacement of the spring from its equilibrium length,
       <me>F = -kx.</me>
     This equation is known as <term>Hooke's Law</term><idx>Hooke's Law</idx>. We can test this law experimentally, and it is reasonably accurate if the displacement of the spring is not too large.</p>
 
     <p>By Newton's second law of motion, the force on the mass must be
       <me>F = ma = m \frac{d^2 x}{dt^2} = m x''.</me>
-    Setting the two forces equal, we have a <term>second order</term> differential equation,
+    Equating the two expressions for <m>F</m>, we have a <term>second order</term> differential equation,
       <me>mx'' = -kx,</me>
     which describes our oscillating mass. The spring-mass system is an example of a <term>harmonic oscillator</term><idx>harmonic oscillator</idx>.</p>
 
@@ -246,11 +254,11 @@
 
       <p>Suppose that we have a spring-mass system where <m>m =1</m> and <m>k = 1</m>. If the initial velocity of the spring is one unit per second and the initial position is at the equilibrium point, then we have the following initial value problem,
       <md>
-        <mrow>x'' + x &amp; =  0</mrow>
-        <mrow>x(0) &amp; =  0</mrow>
-        <mrow>x'(0) &amp; =  1.</mrow>
+        <mrow tag="star" xml:id="equation-firstlook01-harmonic">x'' + x \amp =  0</mrow>
+        <mrow>x(0) \amp =  0</mrow>
+        <mrow>x'(0) \amp =  1.</mrow>
       </md>
-      Since <m>x''(t) = - x(t)</m> for both the sine and cosine functions, we might guess that a general solution of our differential equation has the form
+      Since <m>x''(t) = - x(t)</m> for both the sine and cosine functions, we might guess that a general solution of the differential equation <xref ref="equation-firstlook01-harmonic" type="text-local"/> has the form
         <me>x(t) = A \cos t + B \sin t.</me>
       Noting that
         <me>x'(t) = -A \sin t + B \cos t,</me>
@@ -288,23 +296,23 @@
         <me>x'' + 3x' + 2x = 0.</me>
       Here we let <m>m = 1</m>, <m>b = 3</m>, and <m>k = 2</m>, We will learn how to solve equations of the form <m>mx'' + bx' + kx = 0</m> in <xref ref="secondorder"/>, but let us assume that the solution is of the form <m>x(t) = e^{rt}</m> for now. In this case,
         <md>
-          <mrow>x'' + 3x' + 2x &amp; = r^2 e^{rt} + 3 r e^{rt} + 2 e^{rt}</mrow>
-          <mrow>&amp; = e^{rt}(r^2 + 3r +2)</mrow>
-          <mrow>&amp; = e^{rt}(r+2)(r+1)</mrow>
-          <mrow>&amp; = 0.</mrow>
+          <mrow>x'' + 3x' + 2x \amp = r^2 e^{rt} + 3 r e^{rt} + 2 e^{rt}</mrow>
+          <mrow>\amp = e^{rt}(r^2 + 3r +2)</mrow>
+          <mrow>\amp = e^{rt}(r+2)(r+1)</mrow>
+          <mrow>\amp = 0.</mrow>
         </md>
       Since <m>e^{rt}</m> is never zero, it must be the case that <m>r = -2</m> or <m>r = -1</m>, if <m>x(t) = e^{rt}</m> is to be a solution to our equation. Thus, we might guess that
         <me>x(t) = A e^{-t} + B e^{-2t}</me>
       is a general solution to our equation. If the initial velocity of our mass is one unit per second and the initial position is zero, then we have the initial value problem
         <md>
-          <mrow>x'' + 3x' + 2 x &amp; = 0</mrow>
-          <mrow>x(0) &amp; = 0</mrow>
-          <mrow>x'(0) &amp; = 1.</mrow>
+          <mrow>x'' + 3x' + 2 x \amp = 0</mrow>
+          <mrow>x(0) \amp = 0</mrow>
+          <mrow>x'(0) \amp = 1.</mrow>
         </md>
       Using the fact that <m>x'(t) = -A e^{-t} -2 B e^{-2t}</m>, our initial conditions give us the following system of linear equations,
         <md>
-          <mrow>A + B &amp; = 0</mrow>
-          <mrow>-A -2B &amp; = 1.</mrow>
+          <mrow>A + B \amp = 0</mrow>
+          <mrow>-A -2B \amp = 1.</mrow>
         </md>
       Thus, <m>A = 1</m> and <m>B = -1</m>, and our spring-mass system is modeled by the function
         <me>x(t) =  e^{-t} - e^{-2t}.</me>
@@ -326,9 +334,9 @@
 
       <p>Of course, if we have a very strong spring and only add a small amount of damping to our spring-mass system, the mass would continue to oscillate, but the oscillations would become progressively smaller. In other words, our system would be under-damped. For example, our spring-mass system might be described by the initial value problem
         <md>
-          <mrow>x'' + 2x' + 50 x &amp; = 0</mrow>
-          <mrow>x(0) &amp; = 0</mrow>
-          <mrow>x'(0) &amp; = 1.</mrow>
+          <mrow>x'' + 2x' + 50 x \amp = 0</mrow>
+          <mrow>x(0) \amp = 0</mrow>
+          <mrow>x'(0) \amp = 1.</mrow>
         </md>
       It is easy to verify that
         <me>x(t) = \frac{1}{7} e^{-t} \sin 7t</me>
@@ -349,7 +357,31 @@
       </figure>
     </example>
 
-    <p>We will explore harmonic oscillators and second-order differential equations more fully in <xref ref="secondorder"/>.</p>
+    <p>We will explore harmonic oscillators and second-order differential equations more fully in <xref ref="secondorder"/>. Try the exercises below to make sure you understand the concepts discussed above.</p>
+
+    <exercisegroup>
+      <exercise>
+        <webwork source="Library/Michigan/Chap11Sec11/Q27.pg"/>
+      </exercise>
+      <exercise>
+        <webwork source="Library/Rochester/setDiffEQ1/ur_de_1_5.pg"/>
+      </exercise>
+      <exercise>
+        <introduction>
+          <p>Despite what the exercise text claims, there is no credit given for completing the exercise here.</p>
+        </introduction>
+        <webwork source="Library/MiamiUOhio/DiffEq/Definitions_and_Terminology/Problem23.pg"/>
+      </exercise>
+      <exercise>
+        <webwork source="Library/FortLewis/DiffEq/0-Introduction/Lebl-0-2-09.pg"/>
+      </exercise>
+      <exercise>
+        <introduction>
+          <p>Just to make sure you are knocking the rust off your calculus skills<ellipsis/>calculations like this should be effortlessly routine.</p>
+        </introduction>
+        <webwork source="Library/FortLewis/DiffEq/2-Higher-order/03-Linear-higher-order/Lebl-2-3-05.pg"></webwork>
+      </exercise>
+    </exercisegroup>
 
   </subsection>
 
@@ -379,13 +411,13 @@
       </ul>
     We now have a <term>system</term> of differential equations that describe how the two populations interact,
       <md>
-        <mrow>\frac{dH}{dt}  &amp; =  aH - bHL,</mrow>
-        <mrow>\frac{dL}{dt}  &amp; =  -cL + dHL.</mrow>
+        <mrow>\frac{dH}{dt}  \amp =  aH - bHL,</mrow>
+        <mrow>\frac{dL}{dt}  \amp =  -cL + dHL.</mrow>
       </md >
     We will learn how to analyze and find solutions of systems of differential equations in subsequent chapters; however, we will give a graphical solution in <xref ref="figure-firstlook01-lynx-snowshoe-hare"/> to the system
       <md>
-        <mrow>\frac{dH}{dt} &amp; =  0.4H - 0.01HL,</mrow>
-        <mrow>\frac{dL}{dt} &amp; =  -0.3L + 0.005HL.</mrow>
+        <mrow>\frac{dH}{dt} \amp =  0.4H - 0.01HL,</mrow>
+        <mrow>\frac{dL}{dt} \amp =  -0.3L + 0.005HL.</mrow>
       </md>
     Our graphical solution is obtained using a numerical algorithm (see <xref ref="firstlook04"/> and <xref ref="systems03"/>). Notice that the predator population, <m>L</m>, begins to grow and reaches a peak after the prey population, <m>H</m> reaches its peak.  As the prey population declines, the predator population also declines. Once the predator population is smaller, the prey population has a chance to recover, and the cycle begins again.<fn>An excellent account of the actual lynx and snowshoe hare data and model can be found in <xref ref="bauer-2001"/>.</fn></p>
 
@@ -427,27 +459,27 @@
 
     <p>Like the influenza virus, the HIV-1 virus is an RNA virus. An RNA virus cannot reproduce on its own and must use the DNA from a host cell. To do this, the virus attaches itself to a CD4-positive T-helper cell and injects its RNA into the cell. This way the virus can use the T-cell's DNA to replicate itself using a process called reverse transcription, where a DNA copy of the virus's RNA is made. New virus particles are created, and the T-cell eventually bursts releasing the virions into the body. If we let <m>T^*</m> be the concentration of infected T-cells, we can model this process with the following system of equations,
       <md>
-        <mrow>\frac{dT^*}{dt} &amp; =  kTV - \delta T^*</mrow>
-        <mrow>\frac{dV}{dt} &amp; =  N \delta T^* - cV,</mrow>
+        <mrow>\frac{dT^*}{dt} \amp =  kTV - \delta T^*</mrow>
+        <mrow>\frac{dV}{dt} \amp =  N \delta T^* - cV,</mrow>
       </md>
     where <m>\delta</m> is the rate of loss of the virus producing T-cells and <m>N</m> is the number of virions produced per infected T-cell during its lifetime. The term <m>kTV</m> tells us the rate at which the HIV-1 virus infects T-cells. This is the same idea as modeling how predators interact with prey in a predator-prey model. Thus, our complete model becomes
       <md>
-        <mrow>\frac{dT}{dt} &amp; =  s + pT\left(1 - \frac{T}{T_{\text{max}}}  \right) - d_T T - kTV</mrow>
-        <mrow>\frac{dT^*}{dt} &amp; =  kTV - \delta T^*</mrow>
-        <mrow>\frac{dV}{dt} &amp; =  N \delta T^* - cV.</mrow>
+        <mrow>\frac{dT}{dt} \amp =  s + pT\left(1 - \frac{T}{T_{\text{max}}}  \right) - d_T T - kTV</mrow>
+        <mrow>\frac{dT^*}{dt} \amp =  kTV - \delta T^*</mrow>
+        <mrow>\frac{dV}{dt} \amp =  N \delta T^* - cV.</mrow>
       </md></p>
 
     <p>One class of drugs that HIV infected patients receive are reverse transcriptase (RT) inhibitors. RT inhibitors block the action of reverse transcription and prevent the virus from duplicating. If one could find the perfect RT inhibitor, then <m>k =0</m> and our system becomes
       <md>
-        <mrow>\frac{dT}{dt} &amp; = s + pT\left(1 - \frac{T}{T_{\text{max}}}  \right) - d_T T</mrow>
-        <mrow>\frac{dT^*}{dt} &amp; = - \delta T^*</mrow>
-        <mrow>\frac{dV}{dt} &amp; = N \delta T^* - cV.</mrow>
+        <mrow>\frac{dT}{dt} \amp = s + pT\left(1 - \frac{T}{T_{\text{max}}}  \right) - d_T T</mrow>
+        <mrow>\frac{dT^*}{dt} \amp = - \delta T^*</mrow>
+        <mrow>\frac{dV}{dt} \amp = N \delta T^* - cV.</mrow>
       </md>
     Unfortunately, no one has discovered a perfect RT inhibitor, so we will need to modify the system to account for the effectiveness of the RT inhibitor. We can accomplish this by adding an effectiveness factor, <m>1 - \eta</m>, to the <m>kVT</m> term. Our system now becomes
       <md>
-        <mrow>\frac{dT}{dt} &amp; =  s + pT\left(1 - \frac{T}{T_{\text{max}}}  \right) - d_T T - k(1 - \eta)TV</mrow>
-        <mrow>\frac{dT^*}{dt} &amp; =  k(1 - \eta)TV - \delta T^*</mrow>
-        <mrow>\frac{dV}{dt} &amp; =  N \delta T^* - cV.</mrow>
+        <mrow>\frac{dT}{dt} \amp =  s + pT\left(1 - \frac{T}{T_{\text{max}}}  \right) - d_T T - k(1 - \eta)TV</mrow>
+        <mrow>\frac{dT^*}{dt} \amp =  k(1 - \eta)TV - \delta T^*</mrow>
+        <mrow>\frac{dV}{dt} \amp =  N \delta T^* - cV.</mrow>
       </md>
     If <m>\eta = 1</m>, then the RT inhibitor is completely effective. On the other hand, if <m>\eta = 0</m>, then the RT inhibitor is completely ineffective. We now have a model for how the HIV-1 virus interacts with the immune system. Researchers can use data to estimate the parameters and see exactly what types of solutions are possible.</p>
 
@@ -456,7 +488,15 @@
   <subsection xml:id="subsection-firstlook01-questions-for-thought">
     <title>Some Questions for Thought</title>
 
-    <p>In this section we have provided a general notion of what a differential equation is as well as several modeling situations where differential equations are useful; however, we have left many questions unanswered. First, we need a more rigorous definition of a differential equation.  What is the proper way to define a system of differential equations? Does a differential equation or a system of differential equations always have a solution?  Are solutions to differential equations unique? If a unique solution to a differential equation exists, can we find it? If it is not possible to find a precise solution algebraically, can we estimate the solution numerically?  If neither is possible, can we still say anything useful about the solution? Of course, other questions will come to mind as we continue our study of differential equations.</p>
+    <p>In this section we have provided a general notion of what a differential equation is as well as several modeling situations where differential equations are useful; however, we have left many questions unanswered.<ul>
+      <li>First, we need a more rigorous definition of a differential equation.</li>
+      <li>What is the proper way to define a system of differential equations?</li>
+      <li>Does a differential equation or a system of differential equations always have a solution?</li>
+      <li>Are solutions to differential equations unique?</li>
+      <li>If a unique solution to a differential equation exists, can we find it?</li>
+      <li>If it is not possible to find a precise solution algebraically, can we estimate the solution numerically?</li>
+      <li>If neither is possible, can we still say anything useful about the solution?</li>
+    </ul>Of course, other questions will come to mind as we continue our study of differential equations.</p>
 
   </subsection>
 
@@ -476,9 +516,9 @@
         <me>\frac{dP}{dt} = k \left( 1 - \frac{P}{N} \right) P, </me>
       where <m>N</m> is the carrying capacity of the population.</li>
 
-      <li>Some phenomenon, such as the relationship between a population of predators and a population of prey, are best modeled by systems of differential equations.</li>
+      <li>Some phenomena, such as the relationship between a population of predators and a population of prey, are best modeled by systems of differential equations.</li>
 
-      <li><p>The three principle steps in modeling any phenomenon with differential equations are:
+      <li><p>The three principal steps in modeling any phenomenon with differential equations are:
         <ul>
 
           <li><p>Discovering the differential equation or equations that best describe a specified physical situation.</p></li>
@@ -570,9 +610,9 @@
           <me>x'(t) = -a Ce^{-at} - a e^{-at} \int_{t_0}^t e^{as}b(s) \, ds + b(t),</me>
         we see that
           <md>
-            <mrow>x'(t) + a x(t) - b(t) &amp; = -a Ce^{-at} - a e^{-at} \int_{t_0}^t e^{as}b(s) \, ds + b(t)</mrow>
-            <mrow>&amp; + \; aCe^{-at} + ae^{-at} \int_{t_0}^t e^{as}b(s) \, ds - b(t)</mrow>
-            <mrow>&amp; = 0.</mrow>
+            <mrow>x'(t) + a x(t) - b(t) \amp = -a Ce^{-at} - a e^{-at} \int_{t_0}^t e^{as}b(s) \, ds + b(t)</mrow>
+            <mrow>\amp + \; aCe^{-at} + ae^{-at} \int_{t_0}^t e^{as}b(s) \, ds - b(t)</mrow>
+            <mrow>\amp = 0.</mrow>
           </md></p>
       </hint>
     </exercise>
@@ -650,8 +690,8 @@
 
     <p>We can use Sage to solve differential equations. Suppose that we wish to solve the initial value problem
       <md>
-        <mrow>\frac{dP}{dt} &amp; = kP</mrow>
-        <mrow>P(0) &amp; = 1000.</mrow>
+        <mrow>\frac{dP}{dt} \amp = kP</mrow>
+        <mrow>P(0) \amp = 1000.</mrow>
       </md>
     We can use the following commands.</p>
 
@@ -687,6 +727,16 @@
             </output>
           </sage>
 
+        </statement>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>Use the Sage commands illustrated above to reproduce or check your work on some of the exercises for this section.</p>
+          <sage>
+            <input>
+            </input>
+          </sage>
         </statement>
       </exercise>
 
