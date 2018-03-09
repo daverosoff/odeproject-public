@@ -5,7 +5,7 @@
     <cross-references text="type-local"/>
   </docinfo>
   <article xml:id="SFO">
-    <title>Differential Equations Worksheet</title>
+    <title>Separable Equations Worksheet</title>
     <subtitle>Accompanies Section 1.2 in ODEP</subtitle>
     <frontmatter>
       <xi:include href="../header.ptx"/>
