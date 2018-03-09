@@ -36,7 +36,7 @@
         <introduction>
           <p>A nuclear reactor sits at the bottom of a pool with volume <quantity>
             <mag>75000</mag>
-            <unit prefix="kilo" base="liter"/>
+            <unit base="liter"/>
           </quantity>. The water in the pool is not processed or filtered,
           so algae naturally grow in it
           (far enough from the reactor unit, anyway).
