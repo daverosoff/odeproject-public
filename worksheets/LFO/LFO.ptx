@@ -17,10 +17,10 @@
       </me>.</p>
       <activity xml:id="activity-integrating-factors-1">
         <title>Integrating factors</title>
-        <prelude>
+        <activity>
           <p>Every student of the mathematical sciences should know how to solve first-order linear equations, along with the separable equations we encountered previously. First-order linear equations can always be solved (in principle<fn>The integrals that arise may be intractable for hand calculation.</fn>) via the method of integrating factors.</p>
           <p>Consider the equation<men xml:id="eq-linear-1">\frac{dy}{dt} + \frac{y(t)}{2} = \frac{1}{2} e^{t/3}</men>.</p>
-        </prelude>
+        </activity>
         <task xml:id="task-mult-by-mu">
           <statement><p>Multiply this equation by a new unknown function <m>\mu(t)</m>.</p></statement>
           <answer xml:id="answer-mult-by-mu">
@@ -99,11 +99,11 @@
       </activity>
       <activity xml:id="activity-practice-integrating-factors">
           <title>Practice integrating factors</title>
-          <prelude>
+          <activity>
             <p>Consider the equation<men xml:id="eq-linear-2">
               y' - 2ty = 2t
             </men>.</p>
-          </prelude>
+          </activity>
           <task xml:id="task-practice-mult-by-mu">
             <statement>
               <p>Multiply both sides by <m>\mu(t)</m>.</p>
