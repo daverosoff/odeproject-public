@@ -1,12 +1,12 @@
-︠2a837a4d-49f4-4fe0-a3a1-77273539dc53︠
+︠9e633635-1f72-4fcb-a3d4-65e4af4bfe8d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡a7d3a5ef-2282-4681-a6bc-823ba71d0ea6︡
-︠15df8857-8891-4af9-ac65-8f8ba22b03aa︠
+︡f1c650c8-6e8e-407a-abb8-01de58da4c8c︡
+︠a8e7f47c-cda4-4bac-a667-f79c5f539902︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content">\(
@@ -14,23 +14,23 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡9c07b901-0899-4949-a300-88f13a466490︡
-︠f3d0a99b-a933-42d7-ac08-c90ca46eac34︠
+︡6ab52a99-6570-4a3b-a7a2-e9986e7b2152︡
+︠3cde1f8a-9e01-4fb4-aa2e-c1869e40a710︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡d27a323c-dd51-418e-a95e-1181d2640014︡
-︠a6b9ebcc-88ed-4cfc-aad4-7217f8aa5701︠
+︡95c73e7c-80a9-41a4-a657-518d81bc2644︡
+︠8393e458-3c72-44db-a844-d83a765aa14e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="LFO"></section></div>
-︡cb874731-4ba2-4871-a51f-981b003ba83a︡
-︠af537aaa-ce66-41ee-a34f-2e74a85d3f66︠
+︡6c20f145-a711-4a5f-a5e4-9bcd533bded1︡
+︠c3ef4e08-3a05-4caa-ac09-0a5c7b0b6e93︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡a1605ebf-88ef-4f0e-ad32-c604bad0810f︡
-︠8b0eb6c7-5504-4404-a2d8-5af5fa0ca8ea︠
+︡067e6cc6-4015-45df-a0af-aaaf71a8d077︡
+︠48dc7384-ad4c-42aa-a2a4-14fb47defaf7︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -43,15 +43,15 @@
 </div>
 <time class="date">Spring 2018</time>
 </div>
-︡765841e1-9479-48b9-ade7-632581f8ea1c︡
-︠492a17c0-854f-4fdb-a9ba-01d36645f300︠
+︡14ff0639-ae6f-4a99-a4b4-9d989df6bf1b︡
+︠62f62fc5-9740-46e9-a025-5b2e4bb42733︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 First-order linear differential equations">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">First-order linear differential equations</span>
 </h2></section></div>
-︡f492fbac-b320-431d-aeb9-8ca6f0c36b76︡
-︠c7b59b04-7c79-4cab-aa86-312e71f455fd︠
+︡2a61081d-ea42-4ab1-a4c3-91fcf47b893b︡
+︠d56376c8-3b38-4de4-ae30-2c128160cfaf︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -62,8 +62,8 @@
 \end{equation*}
 </div>
 </div>
-︡cc481e42-2bf9-45b3-a16c-7aea85c7a1da︡
-︠fa632716-a429-4d85-a19b-d06bbe176b94︠
+︡b751bc77-5b28-4407-a8ea-816a4fbaf8a9︡
+︠751c6c9e-3ea6-47e6-ae65-8f6f9ae55ed0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -171,8 +171,8 @@ y' = \frac{1}{5} e^{t/3} - \frac{1}{2} Ce^{-t/2}\text{.}
 <p>as required.</p></span></div>
 </div></article></article>
 </div>
-︡58ecc14d-7e1a-48f2-ad0b-9dcf98ebf579︡
-︠9d179d8d-b0cd-4a4c-ad2c-9ca5c4dbfd06︠
+︡84591b5b-a994-4003-a6ea-b79263d58336︡
+︠3ba85c4b-7f41-4441-a7b0-177b9ef738b6︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -199,8 +199,8 @@ y' - 2ty = 2t\text{.}\label{eq-linear-2}\tag{1.2}
 </div></article><article class="exercise-like" id="task-practice-check"><h6 class="heading"><span class="codenumber">(f)</span></h6>
 <p id="p-32">Differentiate the function you found in <a href="LFO.sagews#task-practice-finish-solve" class="xref" alt="Task 1.2.e " title="Task 1.2.e ">Task e</a> and substitute into <a href="LFO.sagews#mjx-eqn-eq-linear-2" class="xref" alt="Equation 1.2 " title="Equation 1.2 ">(1.2)</a> to verify that your solution is correct.</p></article></article>
 </div>
-︡69480d69-a297-4f4c-ac2e-9bb4088e38c3︡
-︠f3d3be02-7b41-4346-af08-e939e41635ff︠
+︡ee29775c-2db7-4e0c-a077-09e858740acb︡
+︠1aa441ba-ee79-466a-a261-a7b800174121︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -212,18 +212,18 @@ y' + p(t)y = q(t)\text{,}\label{eq-linear-general}\tag{1.3}
 </div>
 <p>we can always choose \(\mu(t) = \underline{\hspace{18.1818181818182em}}\text{,}\) where \(P(t)\) is any antiderivative of \(p(t)\text{.}\)</p>
 </div>
-︡8e262e43-0bf4-4d29-a319-bf3e913b8618︡
-︠5a680964-c70b-4cde-a50f-fcf2b94e5d46︠
+︡c3c67083-a622-4088-aabf-c577e77ffc11︡
+︠ed5a4cbd-0532-484b-a0e7-0ad72bfabe6c︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="remark-like" id="warning-1"><h6 class="heading">
 <span class="type">Warning</span><span class="codenumber">1</span>
 </h6>
 <p id="p-34">Note that the formula for the integrating factor assumes that the differential equation has been put into a certain <dfn class="terminology">standard form</dfn>. If you memorize the former, be sure to remember the latter as well!</p></article></div>
-︡5a0c2159-5205-4ec3-ac14-c00c3b679b5e︡
-︠5e7d9afd-6dbc-4ec4-ac59-b6b3895ed6fe︠
+︡05a5ff1b-c200-4484-a092-89d50010ace1︡
+︠6e935d1c-9ad4-43fe-a853-fa588d93acae︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡b4d227c1-43ef-4fdb-a491-e57a803ee15e︡
+︡00ca4275-f0fc-443c-a3b1-6bcc34ad8492︡
 
