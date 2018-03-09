@@ -11,42 +11,60 @@
     </frontmatter>
     <section>
       <title>Modeling with linear equations</title>
-      <p>Pay special attention to the setup: formulation of the initial value problems involved. Feel free to use whatever electronic help you like: calculator, phone, tablet, laptop, Robocop, Skynet, etc. Include an appropriate amount of calculation work.</p>
+      <p>Some of these tasks should feel familiar, but this time you are asked to do more. As before, pay special attention to the setup: formulation of the initial value problems involved. Feel free to use whatever electronic help you like: calculator, phone, tablet, laptop, Robocop, Skynet, etc. Include an appropriate amount of calculation work.</p>
       <activity xml:id="activity-see-me-rollin">
-        <title>They see me rollin<rq/></title>
-        <activity>
-          <p>A certain college graduate borrows <dollar/><m>8000</m> to buy a car. The lender charges interest, compounded continuously at an annual rate of <m>10</m><percent/>.</p>
-        </activity>
-        <task xml:id="task-payoff-fixed-term">
-          <p></p>
-        </task>
+        <title>They see me rollin<rsq/></title>
+        <introduction>
+          <p>Quincy, a recent college graduate, borrows <dollar/>8000 to buy a car. The lender, Nurl's Wacky Car Loans, charges interest, compounded continuously at an annual rate of 10<percent/>.</p>
+        </introduction>
         <task xml:id="task-payoff-constant-rate">
           <p>Assuming that interest is compounded continuously and that the borrower makes payments continuously at a constant monthly rate of <m>k</m> dollars, determine the payment rate <m>k</m> that is required to pay off the loan in <m>3</m> years.</p>
+        </task>
+        <task xml:id="task-payoff-fixed-term">
+          <p>Unlike most lenders, Nurl's Wacky Car Loans allows buyers to choose their own payment rate. Quincy wants to pay only <dollar/>50 each month. How long will it be before Quincy pays off his loan? Round <em>upward</em> to a whole number of months.</p>
         </task>
       </activity>
       <activity xml:id="activity-life-after-debt">
         <title>Life after debt</title>
-        <activity>
-          <p>Lanthley can afford to spend no more than <dollar/><m>800</m> on her monthly mortgage payments. Suppose that the annual interest rate is <m>9</m><percent/> and that the term of the mortgage is <quantity>
+        <introduction>
+          <p>Lanthley can afford to spend no more than <dollar/>800 on her monthly mortgage payments. Suppose that the annual interest rate is 9<percent/> and that the term of the mortgage is <quantity>
             <mag>20</mag>
             <unit base = "year" />
           </quantity>. Assume that interest is compounded continuously and that payments are also made continuously.</p>
-        </activity>
+        </introduction>
         <task xml:id="task-find-maximum-amount">
           <p>Determine the maximum amount that Lanthley can afford to borrow to finance her home purchase.</p>
         </task>
       </activity>
       <activity xml:id="activity-clean-energy">
         <title>Clean energy</title>
-        <activity>
-          <p>A nuclear reactor sits at the bottom of a pool with volume <m>\SI{75000}{\kilo\liter}</m>. The water in the pool is not processed or filtered, so algae naturally grow in it (far enough from the reactor unit, anyway). Operators must keep this growth within reasonable and safe limits, or facility operations will be adversely affected.</p>
-        </activity>
+        <introduction>
+          <p>A nuclear reactor sits at the bottom of a pool with volume <quantity>
+            <mag>75000</mag>
+            <unit base="liter"/>
+          </quantity>. The water in the pool is not processed or filtered, so algae naturally grow in it (far enough from the reactor unit, anyway). Operators must keep this growth within reasonable and safe limits, or facility operations will be adversely affected.</p>
+        </introduction>
         <task xml:id="task-growth-constant">
-          <p>Suppose that, in the absence of other factors, algae reproduce in the pool at such a rate that their mass doubles every <m>(100/9)\ln(2)</m> days.</p>
-          <p>Formulate and solve an initial value problem that will give you the growth constant <m>r</m>. This growth constant depends only on the algae's reproductive characteristics and the conditions in the ambient environment (which, given the proximity of the reactor, are not uniformly friendly). Make the usual assumption: that the change in population is directly proportional to the current population.</p>
+          <statement>
+            <p>Suppose that, in the absence of other factors, algae reproduce in the pool at such a rate that their mass doubles every <quantity>
+              <mag>7.7</mag>
+              <unit base="day"></unit>
+            </quantity>.</p>
+            <p>Formulate and solve an initial value problem that will give you the growth constant <m>r</m>. This growth constant depends only on the algae's reproductive characteristics and the conditions in the ambient environment (which, given the proximity of the reactor, are not uniformly friendly). Make the usual assumption: that the change in population is directly proportional to the current population.</p>
+          </statement>
+          <hint>
+            <p>You will need two parameters, just like the first time you saw this problem. Even though one parameter won't appear in the solution.</p>
+          </hint>
         </task>
         <task xml:id="task-algae-mass">
-          <p>Reactor operators use a combination of filtering and poison techniques to remove algae at a constant rate (so that the same mass of algae is removed each day). Suppose that a new regulation is going into effect right now (at<nbsp/><m>t = 0</m>) that requires zero algae measured <m>\SI{20}{d}</m> from this moment. If the mass of algae that can be removed from the pool is <m>\SI{400}{g/hr}</m>, find the greatest mass of algae that can be present at<nbsp/><m>t = 0</m> such that the facility will still be in compliance when the regulation takes effect. You will need to formulate and solve an appropriate initial value problem using the growth constant you found above. Pay attention to the setup and resist the urge to jump right to the equation for the algae mass.</p>
+          <p>Reactor operators use a combination of filtering and poison techniques to remove algae at a constant rate (so that the same mass of algae is removed each day). Suppose that a new regulation is going into effect right now (at<nbsp/><m>t = 0</m>) that requires zero algae measured <quantity>
+            <mag>20</mag>
+            <unit base="day"/>
+          </quantity> from this moment. If the mass of algae that can be removed from the pool is <quantity>
+            <mag>400</mag>
+            <unit base="gram"/>
+            <per base="hour"/>
+          </quantity>, find the greatest mass of algae that can be present at<nbsp/><m>t = 0</m> such that the facility will still be in compliance when the regulation takes effect. You will need to formulate and solve an appropriate initial value problem using the growth constant you found above. Pay attention to the setup and resist the urge to jump right to the equation for the algae mass.</p>
         </task>
       </activity>
     </section>
