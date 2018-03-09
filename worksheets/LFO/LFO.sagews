@@ -1,12 +1,12 @@
-︠9e633635-1f72-4fcb-a3d4-65e4af4bfe8d︠
+︠30404ef5-8f82-4a01-ac3d-bdab3f868960︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡f1c650c8-6e8e-407a-abb8-01de58da4c8c︡
-︠a8e7f47c-cda4-4bac-a667-f79c5f539902︠
+︡aa1fb5ea-b6a3-4844-a907-7b52791f0986︡
+︠a31b2c11-7c71-4005-a5a6-c22249c69cf1︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content">\(
@@ -14,23 +14,23 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡6ab52a99-6570-4a3b-a7a2-e9986e7b2152︡
-︠3cde1f8a-9e01-4fb4-aa2e-c1869e40a710︠
+︡39544816-9831-4931-af8c-55e783049909︡
+︠b4208799-d220-43b4-a5ad-10307b38fd20︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡95c73e7c-80a9-41a4-a657-518d81bc2644︡
-︠8393e458-3c72-44db-a844-d83a765aa14e︠
+︡6d48ed07-7da9-4ed5-a220-040347e7fe52︡
+︠3bc9f5c1-b4c9-43b3-a2a3-68c592d20fec︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="LFO"></section></div>
-︡6c20f145-a711-4a5f-a5e4-9bcd533bded1︡
-︠c3ef4e08-3a05-4caa-ac09-0a5c7b0b6e93︠
+︡e17ab6f8-8ac4-44f0-a82a-b937ecaceacc︡
+︠7bee5955-1e0d-425d-a2df-d89007cb4b51︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡067e6cc6-4015-45df-a0af-aaaf71a8d077︡
-︠48dc7384-ad4c-42aa-a2a4-14fb47defaf7︠
+︡7dc6b2f1-81f8-4f2e-ac5b-c24525df02a6︡
+︠42308f38-1b91-4483-a259-e1b37e95e988︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -43,15 +43,15 @@
 </div>
 <time class="date">Spring 2018</time>
 </div>
-︡14ff0639-ae6f-4a99-a4b4-9d989df6bf1b︡
-︠62f62fc5-9740-46e9-a025-5b2e4bb42733︠
+︡0cb3d330-b4c5-450d-a932-224e5cdf2b8a︡
+︠497fc430-4f41-44a1-a235-56794d61c8c5︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 First-order linear differential equations">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">First-order linear differential equations</span>
 </h2></section></div>
-︡2a61081d-ea42-4ab1-a4c3-91fcf47b893b︡
-︠d56376c8-3b38-4de4-ae30-2c128160cfaf︠
+︡31ea0be3-b330-457b-a69e-ce43891fae87︡
+︠3b8268d5-c99f-4ae7-a541-410949268c40︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -62,19 +62,11 @@
 \end{equation*}
 </div>
 </div>
-︡b751bc77-5b28-4407-a8ea-816a4fbaf8a9︡
-︠751c6c9e-3ea6-47e6-ae65-8f6f9ae55ed0︠
+︡37cba247-8111-40cf-a824-9659fa210be4︡
+︠c2c8e6b3-e340-445c-a3de-764d047367e5︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<p id="p-2">Every student of the mathematical sciences should know how to solve first-order linear equations, along with the separable equations we encountered previously. First-order linear equations can always be solved (in principle<span class="footnote"><a knowl="" class="id-ref" refid="hk-fn-1" id="fn-1"><sup> 1 </sup></a></span><span id="hk-fn-1" class="hidden-content tex2jax_ignore"><span class="footnote">The integrals that arise may be intractable for hand calculation.</span></span>) via the method of integrating factors.</p>
-<p id="p-3">Consider the equation</p>
-<div class="displaymath">
-\begin{equation}
-\frac{dy}{dt} + \frac{y(t)}{2} = \frac{1}{2} e^{t/3}\text{.}\label{eq-linear-1}\tag{1.1}
-\end{equation}
-</div>
-<article class="example-like" id="activity-integrating-factors-1"><h6 class="heading">
+<div class="mathbook-content"><article class="example-like" id="activity-integrating-factors-1"><h6 class="heading">
 <span class="type">Activity</span><span class="codenumber">1.1</span><span class="title">Integrating factors</span>
 </h6>
 <article class="exercise-like" id="task-mult-by-mu"><h6 class="heading"><span class="codenumber">(a)</span></h6>
@@ -169,21 +161,13 @@ y' = \frac{1}{5} e^{t/3} - \frac{1}{2} Ce^{-t/2}\text{.}
 \end{align*}
 </div>
 <p>as required.</p></span></div>
-</div></article></article>
-</div>
-︡84591b5b-a994-4003-a6ea-b79263d58336︡
-︠3ba85c4b-7f41-4441-a7b0-177b9ef738b6︠
+</div></article></article></div>
+︡ba7836ee-9c2d-4c72-a9a0-726cf716a7e9︡
+︠ca4427a0-63d9-41a0-a33b-4bea7e285d03︠
 %auto
 %html(hide=True)
-<div class="mathbook-content">
-<p id="p-24">Consider the equation</p>
-<div class="displaymath">
-\begin{equation}
-y' - 2ty = 2t\text{.}\label{eq-linear-2}\tag{1.2}
-\end{equation}
-</div>
-<article class="example-like" id="activity-practice-integrating-factors"><h6 class="heading">
-<span class="type">Activity</span><span class="codenumber">1.2</span><span class="title">Practice integrating factors</span>
+<div class="mathbook-content"><article class="example-like" id="activity-practice-integrating-factors"><h6 class="heading">
+<span class="type">Activity</span><span class="codenumber">1.3</span><span class="title">Practice integrating factors</span>
 </h6>
 <article class="exercise-like" id="task-practice-mult-by-mu"><h6 class="heading"><span class="codenumber">(a)</span></h6>
 <p id="p-25">Multiply both sides by \(\mu(t)\text{.}\)</p></article><article class="exercise-like" id="task-practice-apply-product-rule"><h6 class="heading"><span class="codenumber">(b)</span></h6>
@@ -197,10 +181,9 @@ y' - 2ty = 2t\text{.}\label{eq-linear-2}\tag{1.2}
 <div class="solutions">
 <span class="solution"><a knowl="" class="id-ref" refid="hk-hint-2" id="hint-2"><span class="type">Hint</span></a></span><div id="hk-hint-2" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-31">Here, the constant of integration is essential. We want to know all of the (infinitely many) functions that satisfy <a href="LFO.sagews#mjx-eqn-eq-linear-2" class="xref" alt="Equation 1.2 " title="Equation 1.2 ">(1.2)</a>, not just one of them.</p></span></div>
 </div></article><article class="exercise-like" id="task-practice-check"><h6 class="heading"><span class="codenumber">(f)</span></h6>
-<p id="p-32">Differentiate the function you found in <a href="LFO.sagews#task-practice-finish-solve" class="xref" alt="Task 1.2.e " title="Task 1.2.e ">Task e</a> and substitute into <a href="LFO.sagews#mjx-eqn-eq-linear-2" class="xref" alt="Equation 1.2 " title="Equation 1.2 ">(1.2)</a> to verify that your solution is correct.</p></article></article>
-</div>
-︡ee29775c-2db7-4e0c-a077-09e858740acb︡
-︠1aa441ba-ee79-466a-a261-a7b800174121︠
+<p id="p-32">Differentiate the function you found in <a href="LFO.sagews#task-practice-finish-solve" class="xref" alt="Task 1.3.e " title="Task 1.3.e ">Task e</a> and substitute into <a href="LFO.sagews#mjx-eqn-eq-linear-2" class="xref" alt="Equation 1.2 " title="Equation 1.2 ">(1.2)</a> to verify that your solution is correct.</p></article></article></div>
+︡6ddb2f2c-090e-4219-a35c-e98c40a79f49︡
+︠3a705908-5126-4f58-a88d-567e3cee37e7︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -212,18 +195,18 @@ y' + p(t)y = q(t)\text{,}\label{eq-linear-general}\tag{1.3}
 </div>
 <p>we can always choose \(\mu(t) = \underline{\hspace{18.1818181818182em}}\text{,}\) where \(P(t)\) is any antiderivative of \(p(t)\text{.}\)</p>
 </div>
-︡c3c67083-a622-4088-aabf-c577e77ffc11︡
-︠ed5a4cbd-0532-484b-a0e7-0ad72bfabe6c︠
+︡11282813-1743-4d49-a5d1-338b1c8fab79︡
+︠38b61df2-1095-447a-aed7-f0b8cc44cf04︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="remark-like" id="warning-1"><h6 class="heading">
 <span class="type">Warning</span><span class="codenumber">1</span>
 </h6>
 <p id="p-34">Note that the formula for the integrating factor assumes that the differential equation has been put into a certain <dfn class="terminology">standard form</dfn>. If you memorize the former, be sure to remember the latter as well!</p></article></div>
-︡05a5ff1b-c200-4484-a092-89d50010ace1︡
-︠6e935d1c-9ad4-43fe-a853-fa588d93acae︠
+︡83d3ae19-02aa-48e1-a2cf-ac054c291f81︡
+︠fb033f14-7911-420e-a831-83586a051036︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡00ca4275-f0fc-443c-a3b1-6bcc34ad8492︡
+︡22226518-a81c-494c-a8c0-a430daadfcd3︡
 
