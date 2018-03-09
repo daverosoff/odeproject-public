@@ -9,27 +9,27 @@
 
 <frontmatter xml:id="index" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-	<titlepage>
-<!--
-		<author>
-	        <personname>Theron J. Hitchman</personname>
-	        <department>Department of Mathematics</department>
-	        <institution>University of Northern Iowa</institution>
-	        <email>theron.hitchman@uni.edu</email>
-    	</author>
--->
-		<author>
-			<personname>Thomas W. Judson</personname>
-			<department>Department of Mathematics and Statistics</department>
-			<institution>Stephen F. Austin State University</institution>
-			<email>judsontw@sfasu.edu</email>
-		</author>
+  <titlepage>
 
-		<date>DRAFT <today /> DRAFT</date>
+    <author>
+      <personname>Thomas W. Judson</personname>
+      <department>Department of Mathematics and Statistics</department>
+      <institution>Stephen F. Austin State University</institution>
+      <email>judsontw@sfasu.edu</email>
+    </author>
 
-	</titlepage>
+    <author>
+      <personname>David W. Rosoff</personname>
+      <department>Department of Mathematics and Physical Sciences</department>
+      <institution>The College of Idaho</institution>
+      <email>drosoff@collegeofidaho.edu</email>
+    </author>
 
-	<colophon>
+    <date>DRAFT <today /> DRAFT</date>
+
+  </titlepage>
+
+  <colophon>
 
     <copyright>
         <year>2013<ndash />2017</year>
