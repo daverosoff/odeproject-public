@@ -32,8 +32,8 @@
         <example>
             <p>Suppose that we wish to solve the initial value problem
                 <md>
-                    <mrow>\frac{dy}{dx} &amp; =  xy</mrow>
-                    <mrow>y(0) &amp; =  1.</mrow>
+                    <mrow>\frac{dy}{dx} \amp =  xy</mrow>
+                    <mrow>y(0) \amp =  1.</mrow>
                 </md>
             We can rewrite this equation in the form
                 <me>\frac{1}{y} \frac{dy}{dx} = x</me>
@@ -41,7 +41,7 @@
                 <me>\frac{1}{y} \, dy = x \, dx.</me>
             Integrating both sides of the equation, we have
                 <me>\ln |y| = \frac{1}{2} x^2 + C,</me>
-            where <m>C</m> is an arbitrary constant. Using the initial condition, <m>y(0) = 1</m> to find <m>C</m>, we see that 
+            where <m>C</m> is an arbitrary constant. Using the initial condition, <m>y(0) = 1</m> to find <m>C</m>, we see that
                 <me>0 = \ln|1| = 0 + C.</me>
             Thus, the solution to our initial value problem can be given implicitly by <m>\ln y = x^2/2</m>. In this example, we can actually write down an explicit solution that is defined everywhere,
                 <me>y = e^{x^2/2}.</me>
@@ -64,8 +64,8 @@
 
         <p>If we ask <em>Sage</em> to solve a differential equation that is impossible to solve analytically, the computation will return an error. <em>Sage</em> will not solve the initial value problem
             <md>
-                <mrow>\frac{dy}{dx} &amp; =  \sin(xy)</mrow>
-                <mrow>y(0) &amp; =  1.</mrow>
+                <mrow>\frac{dy}{dx} \amp =  \sin(xy)</mrow>
+                <mrow>y(0) \amp =  1.</mrow>
             </md></p>
 
         <sage>
@@ -81,8 +81,8 @@
         <example>
             <p>Consider the initial-value problem
                 <md>
-                    <mrow>\frac{dy}{dt} &amp; =  \frac{t}{y - t^2y}</mrow>
-                    <mrow>y(0) &amp; = 4.</mrow>
+                    <mrow>\frac{dy}{dt} \amp =  \frac{t}{y - t^2y}</mrow>
+                    <mrow>y(0) \amp = 4.</mrow>
                 </md>
             First, we separate the variables of the equations and write
                 <me>y \, dy = \frac{t}{1 - t^2} \, dt.</me>
@@ -111,10 +111,10 @@
         <example>
             <p>The initial value problem in <xref ref="example-firstlook01-logistic-growth" /> is a good example of a separable differential equation,
                 <md>
-                    <mrow>\frac{dP}{dt} &amp; = k \left( 1 - \frac{P}{1000} \right) P</mrow>
-                    <mrow>P(0) &amp; = 100.</mrow>
+                    <mrow>\frac{dP}{dt} \amp = k \left( 1 - \frac{P}{1000} \right) P</mrow>
+                    <mrow>P(0) \amp = 100.</mrow>
                 </md>
-            Using partial fractions, we can rewrite this equation as 
+            Using partial fractions, we can rewrite this equation as
                 <men xml:id="equation-firstlook02-logistic-IVP">\frac{1000}{P(1000 - P)} \, dP = \left( \frac{1}{P} + \frac{1}{1000-P}\right)  \, dP = k \, dt.</men>
             Integrating both sides of <xref ref="equation-firstlook02-logistic-IVP" />, we obtain
                 <me>\ln|P| - \ln|1000 - P| = \ln \left|\frac{P}{1000 - P}\right| = kt + C.</me>
@@ -126,24 +126,24 @@
                 <me>P = \frac{1000Ce^{kt}}{Ce^{kt} + 1} = \frac{1000}{Ce^{-kt} + 1}.</me>
             Using our initial condition <m>P(0) = 100</m>, we can determine that <m>C = 9</m>. </p>
         </example>
-  
+
 	</subsection>
-	
+
 	<subsection xml:id="subsection-firstlook02-newtons-law-cooling">
     	<title>Newton's Law of Cooling</title>
-        	
+
         <p>Separable equations arise in a wide range of application problems. One does not have to watch too many crime dramas to realize that the time of death of a murder victim is an important question in many criminal investigations. How does a forensic scientist or a medical examiner determine the time of death? Human beings have a temperature of <m>98.6^\circ</m>F. If the surrounding temperature is cooler, then the body will cool down after death. Eventually, the temperature of the body will match the temperature of the environment. We should not expect the body to cool at a constant rate either. Think of how a hot cup of coffee or tea cools. The liquid will cool quite quickly during the first few minutes but will remain relatively warm for quite a long period.</p>
-        
+
         <p>The answer to our forensic question can be found by using <term>Newton's law of cooling</term><idx>Newton's law of cooling</idx>, which tells us that the rate of change of the temperature of an object is proportional to the difference between the temperature of the object and the temperature of the surrounding medium. Newton's law of cooling can be easily stated as a differential equation,
             <me>\frac{dT}{dt} = k(T - T_m),</me>
         where <m>T</m> is the temperature of the object, <m>T_m</m> is the temperature of the surrounding medium, and <m>k</m> is the proportionality constant.</p>
 
 		<p>Suppose that the temperature of the surrounding environment is <m>70^\circ</m>F, and we know from experience that a body under these conditions cools off approximately <m>2^\circ</m>F  during the first hour after death.  In order to determine a formula for the time of death, we must solve the initial value problem
             <md>
-                <mrow>\frac{dT}{dt} &amp; =  k(T - 70)</mrow>
-                <mrow>T(0) &amp; =  98.6,</mrow>
+                <mrow>\frac{dT}{dt} \amp =  k(T - 70)</mrow>
+                <mrow>T(0) \amp =  98.6,</mrow>
             </md>
-        where <m>T(1) = 96.6</m>.  If we rewrite the equation 
+        where <m>T(1) = 96.6</m>.  If we rewrite the equation
             <me>\frac{dT}{dt} = k(T - 70) </me>
         as
             <me>\frac{1}{T - 70} \frac{dT}{dt} = k,</me>
@@ -174,7 +174,7 @@
             <caption>Newton's law of cooling</caption>
 
         </figure>
-            
+
         <p>Let us solve our differential equation using <em>Sage</em>.</p>
 
         <sage>
@@ -189,7 +189,7 @@
             (c + 70*e^(-k*t))*e^(k*t)
             </output>
         </sage>
-            
+
         <p>We can use <em>Sage</em> to plot our solution.</p>
 
         <sage>
@@ -207,7 +207,7 @@
     <subsection xml:id="subsection-firstlook02-mixing-problem">
 
         <title>Mixing Problems</title>
-   	
+
     	<p>There is a large class of problems in modeling known as <term>mixing problems</term><idx>mixing problems</idx>.  These problems refer to situations where two or more substances are mixed together in a container or containers.  For example, we might wish to model how chemicals are mixed together in a refinery, how pollutants are mixed together in a pond or a lake, how ingredients are mixed together when brewing beer, or even how various greenhouse gases mix together across different layers of the atmosphere.</p>
 
     	<p>Suppose that we have a large tank containing 1000 gallons of pure water and that water containing 0.5 pounds of salt per gallon flows into the tank at a rate of 10 gallons per minute.  If the tank is also draining at a rate of 10 gallons per minute, the water level in the tank will remain constant.  We will assume that the water in the tank is constantly stirred so that the mixture of salt and water is uniform in the tank.</p>
@@ -227,10 +227,10 @@
             <me>\ln|500 - x| = - \frac{t}{100} - k.</me>
         Consequently,
             <me>500 - x = C e^{-0.01t},</me>
-        where <m>C = e^{-0.01k}</m>.  From our intial condition, we can quickly determine that <m>C = 500</m> and 
+        where <m>C = e^{-0.01k}</m>.  From our intial condition, we can quickly determine that <m>C = 500</m> and
             <me>x(t) = 500 - 500 e^{-0.01t}</me>
         models the amount of salt in the tank at time <m>t</m>. Notice that <m>x(t)\to 500</m> as <m>t \to \infty</m>, as expected.</p>
-    	
+
 	</subsection>
 
 	<subsection xml:id="subsection-firstlook02-retirement">
@@ -293,7 +293,7 @@
 
         <p>If Dr.<nbsp />J. wants to know how long his retirement fund will last, he must solve the equation
         <me>1200 - 149.21 e^{0.05t} = 0.</me>
-        In this case, 
+        In this case,
             <me>t = 20 \ln\left( \frac{1200}{149.21} \right) \approx 41.7.</me>
         This means that if Dr.<nbsp />J. retires in 10 years at the early age of 55, he can expect his retirement to last into his mid 90s.</p>
 
@@ -301,13 +301,13 @@
 
 	<subsection xml:id="subsection-firstlook02-some-theory">
     	<title>Some Theory</title>
- 
+
     	<p>We now give a theoretical basis for solving first-order separable differential equations. A differential equation <m>y' = F(x, y)</m> is called <term>separable</term><idx><h>differential equation</h><h>separable</h></idx> if it can be written in the form
             <men xml:id="equation-firstlook02-separable">f(x) + g(y) \frac{dy}{dx} = 0.</men>
         We now will prove that such an equation can solved by integrating the first term with respect to <m>x</m> and the second term with respect to <m>y</m>. If
             <md>
-                <mrow>h_1(s) &amp; =  \int f(s) \, ds</mrow>
-                <mrow>h_2(s) &amp; =  \int g(s) \, ds,</mrow>
+                <mrow>h_1(s) \amp =  \int f(s) \, ds</mrow>
+                <mrow>h_2(s) \amp =  \int g(s) \, ds,</mrow>
             </md>
         then we can rewrite equation <xref ref="equation-firstlook02-separable" /> as
             <me>h_1'(x) + h_2'(y) \frac{dy}{dx} = 0.</me>
@@ -323,8 +323,8 @@
             <me>f(x) + g(y) \frac{dy}{dx} = 0.</me>
         Then <m>h_1(x_0) + h_2(y_0) = C</m>.  By the Fundamental Theorem of Calculus
             <md>
-                <mrow>h_1(x) - h_1(x_0) &amp; =  \int_{x_0}^x f(s) \; ds,</mrow>
-                <mrow>h_2(y) - h_2(y_0) &amp; =  \int_{y_0}^y g(s) \; ds.</mrow>
+                <mrow>h_1(x) - h_1(x_0) \amp =  \int_{x_0}^x f(s) \; ds,</mrow>
+                <mrow>h_2(y) - h_2(y_0) \amp =  \int_{y_0}^y g(s) \; ds.</mrow>
             </md>
         Consequently, we can replace equation <xref ref="equation-firstlook02-separable" /> with the <term>integral equation</term><idx>integral equation</idx>
             <me>\int_{x_0}^x f(s) \; ds + \int_{y_0}^y g(s) \, ds = 0.</me>
@@ -364,8 +364,8 @@
                 <me>y = \left(  \frac{2}{3} t \right)^{3/2}</me>
             is a solution for <m>t \geq 0</m>. However, we can find at least two additional solutions for <m>t \geq 0</m>:
                 <md>
-                    <mrow>y &amp; =  - \left( \frac{2}{3} t \right)^{3/2},</mrow>
-                    <mrow>y &amp; \equiv  0.</mrow>
+                    <mrow>y \amp =  - \left( \frac{2}{3} t \right)^{3/2},</mrow>
+                    <mrow>y \amp \equiv  0.</mrow>
                 </md>
                 In <xref ref="firstlook05" /> we will learn sufficient conditions for a first-order initial value problem to have a unique solution.</p>
         </example>
@@ -386,9 +386,9 @@
 
     <subsection xml:id="subsection-firstlook02-important-lessons">
     	<title>Important Lessons</title>
-	
+
 	      <p><ul>
-	
+
             <li>A differential equation of <term>order</term> <m>n</m> is an equation that can be put in the form
                 <me>F(t, x, x', x'', \ldots, x^{(n)}) = 0,</me>
             where <m>F</m> is a function of <m>n + 2</m> variables.  A <term>solution</term> to the equation on an interval <m>I = (a, b)</m> is a function <m>u = u(t)</m> such that the first <m>n</m> derivatives of <m>u</m> are defined on <m>I</m>, and
@@ -406,7 +406,7 @@
             and solve by integrating both sides.</li>
 
         </ul></p>
-	
+
 	</subsection>
 
     <exercises xml:id="exercises-firstlook02"  filenamebase="firstlook02">
@@ -464,8 +464,8 @@
             <statement>
                 <p>Solve the initial value problem
                     <md>
-                        <mrow>\frac{dy}{dt} &amp; =  t^2y^2 + t^2;</mrow>
-                        <mrow>y(0) &amp; =  1.</mrow>
+                        <mrow>\frac{dy}{dt} \amp =  t^2y^2 + t^2;</mrow>
+                        <mrow>y(0) \amp =  1.</mrow>
                     </md>
                 What is the domain of your solution?</p>
             </statement>
@@ -489,7 +489,7 @@
 
                         <li>A function <m>f</m> is said to homogeneous of degree <m>n</m> if <m>f(t x, t y)= t^n f(x, y)</m> for <m>n = 1, 2, \ldots</m>.  Show that differential equation
                             <me>P(x, y) dx + Q(x, y) dy = 0,</me>
-                        where <m>P</m> and <m>Q</m> are both homogeneous of degree <m>n</m>, 
+                        where <m>P</m> and <m>Q</m> are both homogeneous of degree <m>n</m>,
                         can be transformed into a separable differential equation using the substitution <m>y = vx</m>.</li>
 
                         <li>Solve the differential equation
@@ -510,20 +510,20 @@
 
     <subsection xml:id="subsection-firstlook02-sage-project">
         <title>Sage<mdash />Quick Start Guide to Solving Ordinary Differential Equations</title>
-    
-        <p><em>Sage</em> has powerful algorithms for finding exact and numerical solutions of differential equations. In addition, we can plot solutions and direction fields. Although some differential equations have an exact solution and can be solved using analytic techniques with calculus, many differential equations can only be solved using numerical techniques. This should not be too surprising if we consider how we solve polynomials. It is quite easy to find the roots of any equation of the form <m>ax^2 + bx + c = 0</m> by either factoring or using the quadratic equation, but solving an equation such as 
+
+        <p><em>Sage</em> has powerful algorithms for finding exact and numerical solutions of differential equations. In addition, we can plot solutions and direction fields. Although some differential equations have an exact solution and can be solved using analytic techniques with calculus, many differential equations can only be solved using numerical techniques. This should not be too surprising if we consider how we solve polynomials. It is quite easy to find the roots of any equation of the form <m>ax^2 + bx + c = 0</m> by either factoring or using the quadratic equation, but solving an equation such as
             <me>5x^7 - 6x^4 +3x^3 -23 x^2 +3x -17 = 0</me>
         is a much more difficult problem.  Unlike the situation for quadratic equations, there does not exist a general formula for solving seventh degree equations. We can even encounter difficulties when using a numerical method such as the Newton-Raphson algorithm.</p>
 
-        <p>In general, <em>Sage</em> needs three things to solve a differential equation: 
+        <p>In general, <em>Sage</em> needs three things to solve a differential equation:
             <ol>
-                
+
                 <li>An abstract function</li>
-                
-                <li>A differential equation</li> 
-                
+
+                <li>A differential equation</li>
+
                 <li>A <em>Sage</em> command to solve the equation.</li>
-            
+
             </ol>
         Suppose we wish to solve the equation
             <me>\frac{dy}{dx} = x + y.</me>
@@ -567,7 +567,7 @@
         </sage>
 
     </subsection>
- 
+
 </section>
 
 <!--</csection>-->
