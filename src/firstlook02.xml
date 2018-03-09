@@ -25,7 +25,7 @@
 
         <p> For some first-order differential equations such as
             <me>\frac{dx}{dt} = k x</me>
-        the solution is given by an explicit formula. In this particular case, the solution is <m>x(t) = Ce^{kt}</m>. In general, we cannot generally find such a formula for an arbitrary first-order differential equation. We can, however, solve a differential equation <m>y' = f(x, y)</m> if we can write the equation in the form
+        the solution is given by an explicit formula. In this particular case, the solution is <m>x(t) = Ce^{kt}</m>. We cannot generally find such a formula for solutions of an arbitrary first-order differential equation. We can, however, solve a differential equation <m>y' = f(x, y)</m> if we can write the equation in the form
             <me>f(x) + g(y) \frac{dy}{dx} = 0.</me>
         Such equations are called <term>separable</term><idx><h>differential equation</h><h>separable</h></idx>. We can solve separable equations by integrating the first term with respect to <m>x</m> and the second term with respect to <m>y</m>.</p>
 
