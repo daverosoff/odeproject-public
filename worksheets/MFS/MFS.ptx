@@ -14,9 +14,9 @@
       <p>Beginners often struggle to pay appropriate attention to the <em>setup</em>, that is, to the formulation of initial value problems. Resist the urge to think about the actual functions and focus on the differential equations.</p>
       <activity xml:id="activity-see-me-rollin">
         <title>They see me rollin<rsq/><ellipsis/></title>
-        <prelude>
-          <p>A certain college graduate borrows <dollar/><m>8000</m> to buy a car. The lender charges interest, compounded continuously at an annual rate of <m>10</m><percent/>.</p>
-        </prelude>
+        <introduction>
+          <p>A certain college graduate borrows <dollar/>8000 to buy a car. The lender charges interest, compounded continuously at an annual rate of 10<percent/>.</p>
+        </introduction>
         <task xml:id="task-see-me-rollin-interest">
           <statement>
             <p>Write a differential equation for the loan balance, supposing no payments are being made.</p>
@@ -33,7 +33,7 @@
       </activity>
       <activity xml:id="activity-clean-energy">
         <title>Clean energy</title>
-        <prelude>
+        <introduction>
           <p>A nuclear reactor sits at the bottom of a pool with volume <quantity>
             <mag>75000</mag>
             <unit prefix="kilo" base="liter"/>
@@ -42,7 +42,7 @@
           (far enough from the reactor unit, anyway).
           Operators must keep this growth within reasonable and safe limits,
           or facility operations will be adversely affected.</p>
-        </prelude>
+        </introduction>
         <task xml:id="task-growth-constant">
           <p>Suppose that, in the absence of other factors, algae reproduce in the pool at such a rate that their mass doubles every <quantity>
             <mag>7.7</mag>

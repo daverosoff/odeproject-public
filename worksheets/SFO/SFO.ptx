@@ -16,9 +16,9 @@
         M(x) + N(y) \frac{dy}{dx} = 0
       </me>.</p>
       <activity xml:id="activity-separable-ics-example">
-        <prelude><p>Solve the initial value problem <men xml:id="eq-sep-1">
+        <activity><p>Solve the initial value problem <men xml:id="eq-sep-1">
           \dfrac{dy}{dx} = 2xy^2, \quad y(2) = 1.
-        </men></p></prelude>
+        </men></p></activity>
         <task xml:id="task-standard-form"><p>Divide both sides by <m>y^2</m> to put the equation in standard form.</p></task>
 
         <task xml:id="task-integrate-both-sides"><p>Integrate each side with respect to the evident variable. (This is
@@ -48,7 +48,7 @@
       </activity>
 
       <activity xml:id="activity-more-equations">
-        <prelude><p>Solve the differential equations.</p></prelude>
+        <activity><p>Solve the differential equations.</p></activity>
         <task xml:id="task-eq-1"><p><m>y' = \frac{x^2}{y}</m></p></task>
 
         <task xml:id="task-eq-2"><p><m>y' + y^2 \sin{x} = 0</m></p></task>
@@ -57,9 +57,9 @@
       </activity>
 
       <activity xml:id="activity-final">
-        <prelude><p>Consider the initial value problem<men>
+        <activity><p>Consider the initial value problem<men>
           y' = 5y^2, y(0) = y_0.
-        </men></p></prelude>
+        </men></p></activity>
         <task xml:id="task-critical-values"><p>For what values of <m>y_0</m> does the solution have a vertical asymptote at <m>t = 6</m>
         and a <m>t</m>-interval of existence <m>-\infty \lt t \lt 6</m>?</p></task>
       </activity>
