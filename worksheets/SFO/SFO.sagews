@@ -1,12 +1,12 @@
-︠c4813c90-62ee-4bff-ac64-9f72030bce16︠
+︠5778d8e1-fc95-444c-afc7-78dfe48d11e3︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡6dbefea8-e1bd-407c-af32-4d2cf3f0fcf0︡
-︠25ed4dcf-6a12-4819-a41d-76a92ad1acda︠
+︡f4a6d8fc-ae84-44c8-a1c4-83d62caa9cc8︡
+︠fbda2a21-7d0f-414c-aa68-febd4e9f83b4︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content">\(
@@ -14,28 +14,28 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡d0fce4aa-3054-43d6-ac17-99d42fef19cf︡
-︠39f36e70-9a1e-4f4c-a50e-ca7aea9d9b66︠
+︡ba094247-3b44-4a59-a6ff-efdac285119c︡
+︠6476eb92-2dd6-418c-abfc-aeb887a1dc26︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡aa0ad685-62f7-40fb-ad5c-b262c5d6361a︡
-︠67faba30-d674-4397-a19b-b10760cec884︠
+︡99b009c9-ce69-4582-a231-edf968119edc︡
+︠916faee6-7e78-4aa4-a303-86e7a663456a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="SFO"></section></div>
-︡cfbb976d-733e-4868-a081-b32bb9c78800︡
-︠cc0889fe-762b-45b1-adba-f6d129ae0270︠
+︡7fcde7bd-d3c4-4b6f-afaf-325290803d6a︡
+︠8d94b8b6-59a1-4d58-ac52-c952bf24f615︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡34d3c5dc-4527-4082-a16d-c54a7631534c︡
-︠4802cd7a-9bfc-43f4-a51a-2df777da83ed︠
+︡0a3afe2b-584f-4a15-a2eb-5a4acf9f3955︡
+︠f6020f03-b6cf-4661-ac9f-7eac86b26fbb︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <h1 class="heading">
-<span class="title">Differential Equations Worksheet</span><span class="subtitle">Accompanies Section 1.2 in ODEP</span>
+<span class="title">Separable Equations Worksheet</span><span class="subtitle">Accompanies Section 1.2 in ODEP</span>
 </h1>
 <div class="author">
 <div class="author-name">Dave Rosoff</div>
@@ -43,15 +43,15 @@
 </div>
 <time class="date">Spring 2018</time>
 </div>
-︡f36052dd-c69b-43ca-a71c-2492b099b2d9︡
-︠0dd6d28a-f519-4145-acc6-8eb1172a1ece︠
+︡5a25c35d-7043-40aa-a163-1e2bab16d869︡
+︠4b361096-e173-447d-af84-39254d164fea︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 First-order separable differential equations">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">First-order separable differential equations</span>
 </h2></section></div>
-︡7cb5298b-4816-413a-a6f7-d868a70c12be︡
-︠13bc8e60-9a8b-409e-abfe-2d696006d298︠
+︡836c97d3-db44-4e9c-ac94-0ce32313a539︡
+︠0bc675d4-9b0e-40f7-acb1-1cdf00314d77︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -62,8 +62,8 @@ M(x) + N(y) \frac{dy}{dx} = 0\text{.}
 \end{equation*}
 </div>
 </div>
-︡0abb749d-437d-4f76-ae36-c643fa4f122a︡
-︠a246ebb8-9fb0-4cb8-a39b-a52e919d1af3︠
+︡7723da9a-f250-405f-a82b-938738769b40︡
+︠3b75f508-f0b5-40cb-a05e-bf1365cec6a1︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -83,8 +83,8 @@ M(x) + N(y) \frac{dy}{dx} = 0\text{.}
 <p id="p-6">If possible, solve your equation for \(y\text{.}\)</p></article><article class="exercise-like" id="task-check"><h6 class="heading"><span class="codenumber">(e)</span></h6>
 <p id="p-7">Substitute your function and its derivative into <a href="SFO.sagews#mjx-eqn-eq-sep-1" class="xref" alt="Equation 1.1 " title="Equation 1.1 ">(1.1)</a> to make sure your solution is correct.</p></article></article>
 </div>
-︡5a5a146c-cfb7-4083-a8cc-47266b8f89a7︡
-︠cf22936f-f2fb-4af4-ad81-9d8b4e6cef58︠
+︡7ddf3c43-5431-4a4d-a542-301548a06760︡
+︠8de5c111-5759-48fd-a652-892af72a791e︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-separable-ics-2"><h6 class="heading">
@@ -97,8 +97,8 @@ M(x) + N(y) \frac{dy}{dx} = 0\text{.}
 1 + ye^{-x} y' = 0, \quad y(0) = 1.\tag{1.2}
 \end{equation}
 </div></article></article></div>
-︡728941ca-1cc1-4770-ac48-de56aa51630c︡
-︠c7e4126e-c7a9-4921-a9e5-2c483e28f8b0︠
+︡a9c8e9a0-af80-480f-a664-8feaad1d7968︡
+︠8124a1e4-283a-48cb-a821-da1b5b87801f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-separable-no-ics"><h6 class="heading">
@@ -111,8 +111,8 @@ M(x) + N(y) \frac{dy}{dx} = 0\text{.}
 y' = \frac{3x^2 + 4x + 2}{2(y-1)}.\tag{1.3}
 \end{equation}
 </div></article></article></div>
-︡5883c952-72a2-4c34-add3-3f07836ab537︡
-︠68febc81-ef49-420d-a7ea-a1ab92ffcb50︠
+︡891bebcc-fe53-48ef-a461-64c7f1389c9a︡
+︠c23dd189-e884-4c12-ab59-dbda3db6653f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -125,8 +125,8 @@ y' = \frac{3x^2 + 4x + 2}{2(y-1)}.\tag{1.3}
 <p id="p-12">\(y' + y^2 \sin{x} = 0\)</p></article><article class="exercise-like" id="task-eq-3"><h6 class="heading"><span class="codenumber">(c)</span></h6>
 <p id="p-13">\(y' = \frac{x^2}{y + yx^3}\)</p></article></article>
 </div>
-︡3b9395f2-6e1a-474b-a4b9-f6b914b038c9︡
-︠8f412e71-0df2-4876-a4c1-db8859d0a186︠
+︡ff13df46-93e1-47b2-aa68-3431f7ebd501︡
+︠4f062d67-3fb2-402d-a3c4-b09f186f3443︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -142,10 +142,10 @@ y' = 5y^2, y(0) = y_0.\tag{1.4}
 <article class="exercise-like" id="task-critical-values"><h6 class="heading"><span class="codenumber">(a)</span></h6>
 <p id="p-15">For what values of \(y_0\) does the solution have a vertical asymptote at \(t = 6\) and a \(t\)-interval of existence \(-\infty \lt t \lt 6\text{?}\)</p></article></article>
 </div>
-︡a15e37da-9e89-4000-a75d-9281bda9e5a7︡
-︠dc4d623f-7917-4027-ac0c-8befeb4b1823︠
+︡59360546-d768-4a7b-a8a7-c67569ed811d︡
+︠576076a3-f626-408e-a2a1-38f325b47434︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡2ff7c690-5197-49aa-a06a-ce6be56217b3︡
+︡18c783e3-7e99-4491-a3bc-5f4427adb12e︡
 
