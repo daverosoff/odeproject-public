@@ -15,7 +15,7 @@
       <activity xml:id="activity-see-me-rollin">
         <title>They see me rollin<rsq/><ellipsis/></title>
         <introduction>
-          <p>A certain college graduate borrows <dollar/>8000 to buy a car. The lender charges interest, compounded continuously at an annual rate of 10<percent/>.</p>
+          <p>Quincy, a recent college graduate, borrows <dollar/>8000 to buy a car. The lender, Nurl<rsq/>s Wacky Car Loans, charges interest, compounded continuously at an annual rate of 10<percent/>.</p>
         </introduction>
         <task xml:id="task-see-me-rollin-interest">
           <statement>
