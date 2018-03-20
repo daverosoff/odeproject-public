@@ -1,12 +1,12 @@
-︠2bf371f4-e709-4928-a299-ca2c5227112c︠
+︠2fbc52e1-063a-446e-aa4b-2dfdff165f79︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡35729e48-2203-4c95-a4be-e7903f36747a︡
-︠1bf9d872-1a41-4d1b-a357-23eb42b893c1︠
+︡69826e45-04b3-4f0a-adbf-8dc8bc7c3dca︡
+︠624f5be9-0eec-42dd-aca8-b368c154d82a︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content">\(
@@ -14,23 +14,23 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡decd7a5e-c791-4972-a4b8-bdca90d48685︡
-︠75342ae8-9bf3-4c9a-afd5-78333c401d69︠
+︡28d78226-b34a-4077-ad32-5f6b82ce6a69︡
+︠59121a43-0075-4a7c-a140-4a0a59d274de︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡2ef62110-abca-4e93-a980-ff923cf7c043︡
-︠a191c214-7556-452b-a4f1-987b7a10799a︠
+︡d27f4899-c994-4f3b-ac50-d9ad40713e50︡
+︠5d675fb7-4c9b-402c-aba9-dd22848c6a5d︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="MFS"></section></div>
-︡64c05927-dac3-4025-ac65-efe6b51d586f︡
-︠2c4fc98f-169e-49a0-ae77-4572c37d0d57︠
+︡cab3203e-78a1-43a3-a05e-92cc541d1776︡
+︠5410740b-283d-4978-ad7e-b118d6ce3e6b︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡c84080a0-0c6a-4af4-abec-322a4eecce92︡
-︠56a972a2-3ae9-4499-a957-58a83f61b204︠
+︡5bf7b7bc-2e45-4bec-a4c4-2863039d2db8︡
+︠81388ff4-c221-48ef-a52c-944f843115fd︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -43,20 +43,20 @@
 </div>
 <time class="date">Spring 2018</time>
 </div>
-︡46bff22a-4653-4fac-a942-19bb2ea805b0︡
-︠a0650683-1d96-4091-ad25-f3fae199aaf5︠
+︡d7e1f71f-be1d-4f9b-afed-b82f8a4bb51b︡
+︠3f211282-1413-410c-ad0b-bc3dbb707358︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 Modeling first steps">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">Modeling first steps</span>
 </h2></section></div>
-︡a961f687-9952-405b-a13e-6215d0679019︡
-︠6b3cd235-acff-4ff5-ab08-97bbc8b3f540︠
+︡e871a833-b57c-489d-a56e-01a4f6f667ab︡
+︠f8479f0d-2b2a-48b4-a60a-41ce5b442abc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><p id="p-1">Beginners often struggle to pay appropriate attention to the <em class="emphasis">setup</em>, that is, to the formulation of initial value problems. Resist the urge to think about the actual functions and focus on the differential equations.</p></div>
-︡ebc17a4a-0f7f-4e7f-a430-cd77840480ad︡
-︠198dbf8f-a8e2-48d9-a71d-7eaf52467c61︠
+︡6b4b2ea2-bdee-4879-acda-72b300f55201︡
+︠e6c32f2c-2da1-4c28-a6e5-057b98b8d0ae︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-see-me-rollin"><h6 class="heading">
@@ -69,8 +69,8 @@
 <span class="solution"><a knowl="" class="id-ref" refid="hk-hint-1" id="hint-1"><span class="type">Hint</span></a></span><div id="hk-hint-1" class="hidden-content tex2jax_ignore"><span class="solution"><p id="p-4">Why is the balance changing in time? How does the change depend on the current value?</p></span></div>
 </div></article><article class="exercise-like" id="task-see-me-rollin-payment"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <p id="p-5">Write another differential equation, this time assuming constant monthly payments of $175.</p></article></article></div>
-︡97a2551e-4c63-4ee1-a862-5e1fd722d9e3︡
-︠a8b5a1ac-ff95-4274-a30a-669766e89c27︠
+︡194ec6ee-30cd-419f-a9fe-ff37ac065e60︡
+︠c8917685-5b61-498b-a92a-719a947aac81︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-clean-energy"><h6 class="heading">
@@ -81,10 +81,10 @@
 <p id="p-7">Suppose that, in the absence of other factors, algae reproduce in the pool at such a rate that their mass doubles every 7.7 d.</p>
 <p id="p-8">Formulate an initial value problem describing this system. You will need some parameters, namely the initial population \(P_0\) and the growth constant \(r\text{.}\) This growth constant depends only on the algae's reproductive characteristics and the conditions in the ambient environment (which, given the proximity of the reactor, are not uniformly friendly). Make the usual assumption: that the change in population is directly proportional to the current population.</p></article><article class="exercise-like" id="task-algae-mass"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <p id="p-9">Reactor operators use a combination of filtering and poison techniques to remove algae at a constant rate (so that the same mass of algae is removed each day). Suppose that a new regulation is going into effect right now (at \(t = 0\)) that requires zero algae measured 20 d from this moment. If the mass of algae that can be removed from the pool is 400 <sup>g</sup>⁄<sub>h</sub>, find the greatest mass of algae that can be present at \(t = 0\) such that the facility will still be in compliance when the regulation takes effect. You will need to formulate and solve an appropriate initial value problem using the growth constant you found above. Pay attention to the setup and resist the urge to jump right to the equation for the algae mass.</p></article></article></div>
-︡0d0b2bdc-8cb1-42e9-a619-180a061efab1︡
-︠a719e3a0-45b1-4f9a-a332-332d55a5d652︠
+︡c4a561ce-71ae-4336-aed8-84a2f466e136︡
+︠d33427db-0a5a-4e4e-aa13-aed5b2533819︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡af9b88f3-8493-458d-afb1-2f44daa7f7d4︡
+︡9edc3f41-a5c0-4fb4-ad55-104f5f1b3545︡
 

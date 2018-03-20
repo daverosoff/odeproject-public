@@ -1,12 +1,12 @@
-︠f958f531-db90-4a5c-a900-eb636af6432b︠
+︠8c3219f6-1a14-4790-a649-5f60846923e3︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
 <link rel="stylesheet" type="text/css" href="http://buzzard.ups.edu/mathbook-content.css">
 <link rel="stylesheet" type="text/css" href="https://aimath.org/mathbook/mathbook-add-on.css">
 </div>
-︡0245a3bd-599e-4934-a5d4-6b0cf66eda10︡
-︠622a8de3-b4c4-4358-a7b5-c11cd023f0e1︠
+︡a70ea17a-7848-4db2-ae27-786e8f2f8527︡
+︠9df9b9a2-42b8-4a94-ad76-4efbd7af6359︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><div class="hidden-content">\(
@@ -14,23 +14,23 @@
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div></div>
-︡0442fcfd-0b2c-4f52-a7cd-c8ee4bf7ee8c︡
-︠0914b01b-e160-4e65-a0d2-daac8f877660︠
+︡be6b7152-4940-41f9-a5c0-c0fbbc26c9a1︡
+︠35fa07c5-91ed-410c-ab59-c19cc58fc596︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡3795b45d-04e7-44dd-aadb-cb578d705e7b︡
-︠b5081cb2-e0d6-48c3-a106-20aa84ce0a51︠
+︡6dc67de4-2751-4572-a227-bf94b5a4569f︡
+︠e1d7aa5d-b0ab-4bcc-a1bd-6d60a7349395︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="article" id="SFO"></section></div>
-︡b16b9784-a658-4ce4-af04-5240cd48c521︡
-︠6d2c9c41-1e77-4746-ab46-0a85a52fee51︠
+︡2860f0a5-e658-4115-ae20-c8e2999dd217︡
+︠73fd3fee-5c4a-456b-aa4e-b06a203cd0ef︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="frontmatter" id="frontmatter-1"></section></div>
-︡0be3870d-92c1-4935-aff9-6f3f4e47e254︡
-︠46f298aa-54c2-4555-aa54-4b48b87ff625︠
+︡76274672-5ce9-473f-a3e4-194837874673︡
+︠5f986dfd-f4ae-4e12-ae41-25b7def653dd︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -43,15 +43,15 @@
 </div>
 <time class="date">Spring 2018</time>
 </div>
-︡a6ca9624-088c-4ae2-a098-5d496f2ef242︡
-︠8e8482ab-7b40-48fe-ab07-4558fb81a73e︠
+︡63cfb3db-1dfb-4bed-aec1-fe7a6595bf99︡
+︠dfc9f7cd-2da2-4961-a64d-74cff2497091︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><section class="section" id="section-1"><h2 class="heading hide-type" alt="Section 1 First-order separable differential equations">
 <span class="type">Section</span><span class="codenumber">1</span><span class="title">First-order separable differential equations</span>
 </h2></section></div>
-︡abd3065b-1c66-4cf5-aba5-2ea77a30bd8f︡
-︠c2b95bfa-617d-474c-acf7-226dad7dd2b5︠
+︡9615f0dc-d0a8-433e-a492-117d16050869︡
+︠9ffa5fb2-b926-4159-afa3-2b599609b011︠
 %auto
 %html(hide=True)
 <div class="mathbook-content">
@@ -62,8 +62,8 @@ M(x) + N(y) \frac{dy}{dx} = 0\text{.}
 \end{equation*}
 </div>
 </div>
-︡177d0c8f-7f1f-4c84-a944-0766404be2e9︡
-︠700fd1c5-1452-432a-a8bf-cc623a376194︠
+︡ab195680-849b-4ab1-a3ab-7c7c6127be7c︡
+︠0181bd83-e188-4c23-ae6d-ada1a13c8eb0︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-separable-ics-example"><h6 class="heading">
@@ -75,8 +75,8 @@ M(x) + N(y) \frac{dy}{dx} = 0\text{.}
 <p id="p-5">You should now have an equation that is free of derivatives, but with a constant of integration. Plug in the initial values to find the value of this constant.</p></article><article class="exercise-like" id="task-finish"><h6 class="heading"><span class="codenumber">(d)</span></h6>
 <p id="p-6">If possible, solve your equation for \(y\text{.}\)</p></article><article class="exercise-like" id="task-check"><h6 class="heading"><span class="codenumber">(e)</span></h6>
 <p id="p-7">Substitute your function and its derivative into <a href="SFO.sagews#mjx-eqn-eq-sep-1" class="xref" alt="Equation 1.1 " title="Equation 1.1 ">(1.1)</a> to make sure your solution is correct.</p></article></article></div>
-︡b14c12de-8e2d-416f-abeb-bb72eac1233c︡
-︠7fecbfe8-d670-4496-a355-e0162f1f1325︠
+︡bc13dd16-1f79-474b-aa22-8cf3ea427c02︡
+︠cbeefcb0-2cfa-457e-a120-3ad3dcd1e4df︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-separable-ics-2"><h6 class="heading">
@@ -89,8 +89,8 @@ M(x) + N(y) \frac{dy}{dx} = 0\text{.}
 1 + ye^{-x} y' = 0, \quad y(0) = 1.\tag{1.2}
 \end{equation}
 </div></article></article></div>
-︡fa4d7fd6-8ad0-4b19-a25f-74f8a28b29f4︡
-︠eff2c72a-db5b-4b0c-a522-4a64316bd84c︠
+︡7ab58a24-a50a-4f61-ad83-ececfb8cd71b︡
+︠6851eec0-2653-415a-a322-70e5ce15bedc︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-separable-no-ics"><h6 class="heading">
@@ -103,8 +103,8 @@ M(x) + N(y) \frac{dy}{dx} = 0\text{.}
 y' = \frac{3x^2 + 4x + 2}{2(y-1)}.\tag{1.3}
 \end{equation}
 </div></article></article></div>
-︡d3bd6848-2237-4df8-aa4b-c953e94441d9︡
-︠ebd9932d-b40f-4cee-a593-06c59aeef30d︠
+︡a35f53e1-408a-43af-add1-042f9fda5892︡
+︠436a3bd1-d126-4c60-ab4e-d42f3cf07491︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-more-equations"><h6 class="heading">
@@ -114,8 +114,8 @@ y' = \frac{3x^2 + 4x + 2}{2(y-1)}.\tag{1.3}
 <p id="p-11">\(y' = \frac{x^2}{y}\)</p></article><article class="exercise-like" id="task-eq-2"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <p id="p-12">\(y' + y^2 \sin{x} = 0\)</p></article><article class="exercise-like" id="task-eq-3"><h6 class="heading"><span class="codenumber">(c)</span></h6>
 <p id="p-13">\(y' = \frac{x^2}{y + yx^3}\)</p></article></article></div>
-︡de8a71d9-f9e0-48be-a608-90e667145185︡
-︠e5470b9e-5974-49ff-a86f-0ffe6668bc93︠
+︡6e4d8895-a67d-4d33-aef7-cccfb0bb12fa︡
+︠3688301c-6b3d-4911-acf0-4cd0b8063193︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><article class="example-like" id="activity-final"><h6 class="heading">
@@ -123,10 +123,10 @@ y' = \frac{3x^2 + 4x + 2}{2(y-1)}.\tag{1.3}
 </h6>
 <article class="exercise-like" id="task-critical-values"><h6 class="heading"><span class="codenumber">(a)</span></h6>
 <p id="p-15">For what values of \(y_0\) does the solution have a vertical asymptote at \(t = 6\) and a \(t\)-interval of existence \(-\infty \lt t \lt 6\text{?}\)</p></article></article></div>
-︡2896fa28-872f-4bbe-ab45-a54a4b0a3b6d︡
-︠eb370fc6-cdab-45f8-a2a6-d723ea16a641︠
+︡cd945d47-ab3d-48cf-aa8e-bda8d61ed506︡
+︠d0c97465-89cd-4b24-ad47-4f6e314e594f︠
 %auto
 %html(hide=True)
 <div class="mathbook-content"><table width="90%" style="font-size: 200%;"><tr></tr></table></div>
-︡23c5bd48-316e-4cbd-a5e7-bbfdfe804279︡
+︡82f5b691-c1a9-4f5b-a42f-b7f2533a1936︡
 
