@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <cross-references text="type-local"/>
+  </docinfo>
+  <article xml:id="LSO">
+    <title>Modeling First Steps Worksheet</title>
+    <subtitle>Accompanies Section  in ODEP</subtitle>
+    <frontmatter>
+      <xi:include href="../header.ptx"/>
+    </frontmatter>
+    <section>
+      <title>Modeling first steps</title>
+      <p>Beginners often struggle to pay appropriate attention to the <em>setup</em>, that is, to the formulation of initial value problems. Resist the urge to think about the actual functions and focus on the differential equations.</p>
+      <activity xml:id="activity-see-me-rollin">
+        <title>They see me rollin<rsq/><ellipsis/></title>
+        <introduction>
+          <p>Quincy, a recent college graduate, borrows <dollar/>8000 to buy a car. The lender, Nurl's Wacky Car Loans, charges interest, compounded continuously at an annual rate of 10<percent/>.</p>
+        </introduction>
+        <task xml:id="task-see-me-rollin-interest">
+          <statement>
+            <p>Write a differential equation for the loan balance, supposing no payments are being made.</p>
+          </statement>
+          <hint>
+            <p>Why is the balance changing in time? How does the change depend on the current value?</p>
+          </hint>
+        </task>
+        <task xml:id="task-see-me-rollin-payment">
+          <statement>
+            <p>Write another differential equation, this time assuming constant monthly payments of <dollar/>175.</p>
+          </statement>
+        </task>
+      </activity>
+      <activity xml:id="activity-clean-energy">
+        <title>Clean energy</title>
+        <introduction>
+          <p>A nuclear reactor sits at the bottom of a pool with volume <quantity>
+            <mag>75000</mag>
+            <unit base="liter"/>
+          </quantity>. The water in the pool is not processed or filtered,
+          so algae naturally grow in it
+          (far enough from the reactor unit, anyway).
+          Operators must keep this growth within reasonable and safe limits,
+          or facility operations will be adversely affected.</p>
+        </introduction>
+        <task xml:id="task-growth-constant">
+          <p>Suppose that, in the absence of other factors, algae reproduce in the pool at such a rate that their mass doubles every <quantity>
+            <mag>7.7</mag>
+            <unit base="day"/>
+          </quantity>.</p>
+          <p>Formulate an initial value problem describing this system. You will need some parameters, namely the initial population <m>P_0</m> and the growth constant <m>r</m>. This growth constant depends only on the algae's reproductive characteristics and the conditions in the ambient environment (which, given the proximity of the reactor, are not uniformly friendly). Make the usual assumption: that the change in population is directly proportional to the current population.</p>
+        </task>
+        <task xml:id="task-algae-mass">
+          <p>Reactor operators use a combination of filtering and poison techniques to remove algae at a constant rate (so that the same mass of algae is removed each day). Suppose that a new regulation is going into effect right now (at<nbsp/><m>t = 0</m>) that requires zero algae measured <quantity>
+            <mag>20</mag>
+            <unit base="day"/>
+          </quantity> from this moment. If the mass of algae that can be removed from the pool is <quantity>
+            <mag>400</mag>
+            <unit base="gram"/>
+            <per base="hour"/>
+          </quantity>, find the greatest mass of algae that can be present at<nbsp/><m>t = 0</m> such that the facility will still be in compliance when the regulation takes effect. You will need to formulate and solve an appropriate initial value problem using the growth constant you found above. Pay attention to the setup and resist the urge to jump right to the equation for the algae mass.</p>
+        </task>
+      </activity>
+    </section>
+  </article>
+</mathbook>
