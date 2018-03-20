@@ -38,7 +38,7 @@ declare LATEX="texfot xelatex"
 declare NODATE="--stringparam debug.datedfiles no"
 
 # FCLA sections that have worksheets, in order
-ALLSECTIONS=(MFS SFO LFO MLE)
+ALLSECTIONS=(MFS SFO LFO MLE EV EMI)
 
 # http://stackoverflow.com/questions/12303974/assign-array-to-variable
 # assignment array variable b=( "${a[@]}" )
