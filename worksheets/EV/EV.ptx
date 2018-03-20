@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <cross-references text="type-local"/>
+  </docinfo>
+  <article xml:id="EV">
+    <title>Example: Escape Velocity</title>
+    <frontmatter>
+      <xi:include href="../header.ptx"/>
+    </frontmatter>
+    <section xml:id="section-example-escape-velocity">
+      <title>Example: escape velocity</title>
+      <p>The equation of motion for a mass launched from the surface of Earth (a sphere of radius <m>R</m>) is
+        <me>v \frac{dv}{dx} = -\frac{-gR^2}{(R+x)^2}</me>.</p>
+      <p>Let's set up the variables we need for our computation.</p>
+      <sage xml:id="sage-setup">
+        <input>
+          x, g, R, v_0 = var('x g R v_0')
+          v = function('v')(x)
+        </input>
+      </sage>
+      <p>Now let's use these variables to encode the differential equation we were given.</p>
+      <sage xml:id="sage-ode">
+        <input>
+          diff_eq = v * v.diff(x) == -g*R^2/(R+x)^2
+          diff_eq
+        </input>
+      </sage>
+      <p>Now let's use the <c>desolve()</c> function to solve the equation, making sure to capture the solution in a new Sage variable.</p>
+      <sage xml:id="sage-desolve">
+        <input>
+          sol = desolve(diff_eq, v, ivar=x, ics=[0, v_0])
+          show(sol)
+        </input>
+      </sage>
+      <p>The solution, as usual, is in implicit form. Use <c>solve()</c> to solve for <m>v(x)</m> (this is not always possible). Again, we capture the result in a new variable.</p>
+      <sage xml:id="sage-solve">
+        <input>
+          vels = solve(sol, v)
+          show(vels)
+        </input>
+      </sage>
+      <p>With our velocity function in hand, let's find the maximum height our vehicle reaches in terms of the initial velocity <m>v_0</m>.</p>
+      <sage xml:id="sage-height-eq">
+        <input>
+          height_eq = 0 == vels[1].rhs()
+          height_eq
+        </input>
+      </sage>
+      <p>Solve this equation for <m>x</m> to find the maximum height (the height when the velocity is <m>0</m>).</p>
+      <sage xml:id="sage-height-max">
+        <input>
+          x_max = solve(height_eq, x)[0].rhs()
+          x_max
+        </input>
+      </sage>
+      <p>To find the escape velocity, let <m>x_{\mathrm{max}} \to \infty</m>.</p>
+      <sage xml:id="sage-solve-height-max">
+        <input>
+          solve(x == x_max, v_0)
+        </input>
+      </sage>
+      <sage xml:id="sage-escape-vel">
+        <input>
+          escape_vel = solve(x == x_max, v_0)[1].rhs().limit(x = oo) # oo is +infinity in this context
+        </input>
+      </sage>
+      <p>Let's check the value of the escape velocity.</p>
+      <sage xml:id="sage-escape-vel-show">
+        <input>
+          show(escape_vel)
+        </input>
+      </sage>
+    </section>
+  </article>
+</mathbook>

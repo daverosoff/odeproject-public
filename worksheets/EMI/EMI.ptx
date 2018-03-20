@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude">
+  <docinfo>
+    <cross-references text="type-local"/>
+  </docinfo>
+  <article xml:id="EMI">
+    <title>Euler's Method (Part I)</title>
+    <subtitle>Accompanies Section 1.4 in ODEP</subtitle>
+    <frontmatter>
+      <xi:include href="../header.ptx"/>
+    </frontmatter>
+    <section xml:id="section-equations">
+      <title>Problems for this activity</title>
+      <p>Refer to the following initial value problems while completing the activities in this worksheet.
+        <mdn>
+          <mrow>y' \amp = 3 + t - y \amp y(0) \amp = 1</mrow>
+          <mrow>y' \amp = 2y - 1 \amp y(0) \amp = 1</mrow>
+          <mrow>y' \amp = 0.5 -t + 2y \amp y(0) \amp = 1</mrow>
+          <mrow>y' \amp = 3\cos(t) - 2y \amp y(0) \amp = 0</mrow>
+        </mdn>
+      </p>
+    </section>
+    <section xml:id="section-eulers-method">
+      <title>Euler's method</title>
+      <p>For each of the initial value problems given in <xref ref="section-equations" />, complete the following:
+        <ul>
+          <li>Find approximate values of the solution of the IVP at <m>t = 0.1, 0.2, 0.3, 0.4</m> using the Euler method with <m>h = 0.1</m>.</li>
+          <li>Repeat, but with <m>h = 0.05</m>. Graph and tabulate to compare with your previous results.</li>
+          <li>Repeat, but with <m>h = 0.01</m>. Graph and tabulate to compare with your previous results.</li>
+          <li>Use the techniques we previously developed to find the unique solution <m>y(t)</m> and evaluate it at <m>t = 0.1, 0.2, 0.3, 0.4</m>. Summarize all your results in a table and with a plot.</li>
+        </ul>
+      </p>
+    </section>
+    <section xml:id="section-worked-example">
+      <title>Worked example</title>
+      <p>Let's work through some of the details for equation 1. One way to do this is to store all the results in two lists.</p>
+      <sage>
+        <input>
+          t, y = var('t y')
+          ts = [0]
+          ys = [1]
+          yp = 3 + t - y
+          h = 0.1
+        </input>
+      </sage>
+      <sage>
+        <input>
+          ts.append(ts[-1] + h)
+          ys.append(ys[-1] + h*yp.subs(t = ts[-1], y=ys[-1]))
+        </input>
+      </sage>
+      <p>To see the contents of the <c>ts</c> and <c>ys</c> lists in a familiar form, run the next cell. Keep running the previous cell to add more values to the lists. Use the next cell to preview the new results. Add values until you have enough data to answer the questions.</p>
+      <sage>
+        <input>
+          our_table = [ts, ys]
+          table(columns=our_table, header_row=['t','y'])
+        </input>
+      </sage>
+      <p>Here's a good way to graph the points you have stored in a table like this.</p>
+      <sage>
+        <input>
+          flip_table = map(list, zip(*our_table)) # take the transpose of the table
+          p = list_plot(flip_table, color="blue", size=72)
+          p += line(flip_table, color="blue", thickness=3)
+          show(p)
+        </input>
+      </sage>
+      <p>The activity asks you to summarize your findings for different values of <m>h</m>. You may find it helpful to know how to extract every <m>k</m>th element from a list. Here is a good Pythonic way to do it.</p>
+      <sage>
+        <input>
+          my_list = ["differential", "equations", "are",
+                     "equations", "relating", "functions",
+                     "and", "their", "derivatives"]
+          my_list[0::3] # start at 0th list entry and use step size 3, until list is done
+        </input>
+      </sage>
+    </section>
+  </article>
+</mathbook>
